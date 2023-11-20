@@ -21,7 +21,7 @@ struct StartScreenVew: View {
                     .foregroundColor(.lightRasbery)
                     .padding(.top, 20)
                 
-                Text ("English poems, rhymes and chants for kids")
+                Text ("English poems, rhymes and songs for kids")
                     .padding(.top)
                     .font(.title)
                     .multilineTextAlignment(.center)
