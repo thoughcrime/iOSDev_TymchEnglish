@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74029B022B0A6A9C007A6FBF /* TymchEnglishTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74029B012B0A6A9C007A6FBF /* TymchEnglishTabView.swift */; };
+		74029B042B0A6C19007A6FBF /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74029B032B0A6C19007A6FBF /* InformationView.swift */; };
+		74029B062B0A6D4D007A6FBF /* FavouritePoemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74029B052B0A6D4D007A6FBF /* FavouritePoemListView.swift */; };
+		74432D9A2B084EC70003790E /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74432D992B084EC70003790E /* AppButton.swift */; };
+		74600C2F2AD4A8D400AAB760 /* TymchEnglishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74600C2E2AD4A8D400AAB760 /* TymchEnglishApp.swift */; };
+		74600C332AD4A8D600AAB760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74600C322AD4A8D600AAB760 /* Assets.xcassets */; };
+		74600C362AD4A8D600AAB760 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74600C352AD4A8D600AAB760 /* Preview Assets.xcassets */; };
+		74600C402AD4A8D600AAB760 /* TymchEnglishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74600C3F2AD4A8D600AAB760 /* TymchEnglishTests.swift */; };
+		74600C4A2AD4A8D600AAB760 /* TymchEnglishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74600C492AD4A8D600AAB760 /* TymchEnglishUITests.swift */; };
+		74600C4C2AD4A8D600AAB760 /* TymchEnglishUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74600C4B2AD4A8D600AAB760 /* TymchEnglishUITestsLaunchTests.swift */; };
+		74B802822B09575700106B17 /* StartScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B802812B09575700106B17 /* StartScreenView.swift */; };
+		74B802882B09952900106B17 /* PoemsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B802872B09952900106B17 /* PoemsGridView.swift */; };
+		74B8028C2B09986300106B17 /* PoemsDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8028B2B09986300106B17 /* PoemsDetailedView.swift */; };
+		74B8028E2B09A85700106B17 /* PoemsCategoriesGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8028D2B09A85700106B17 /* PoemsCategoriesGridView.swift */; };
+		74E351C92B0ACBF5005E76F5 /* Poems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E351C82B0ACBF5005E76F5 /* Poems.swift */; };
+		74E351CB2B0AE0EF005E76F5 /* PoemTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E351CA2B0AE0EF005E76F5 /* PoemTitleView.swift */; };
+		74E351CD2B0AF02F005E76F5 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E351CC2B0AF02F005E76F5 /* BackgroundView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74600C3C2AD4A8D600AAB760 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74600C232AD4A8D400AAB760 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74600C2A2AD4A8D400AAB760;
+			remoteInfo = TymchEnglish;
+		};
+		74600C462AD4A8D600AAB760 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74600C232AD4A8D400AAB760 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74600C2A2AD4A8D400AAB760;
+			remoteInfo = TymchEnglish;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		74029B012B0A6A9C007A6FBF /* TymchEnglishTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TymchEnglishTabView.swift; sourceTree = "<group>"; };
+		74029B032B0A6C19007A6FBF /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		74029B052B0A6D4D007A6FBF /* FavouritePoemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritePoemListView.swift; sourceTree = "<group>"; };
+		74432D992B084EC70003790E /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		74600C2B2AD4A8D400AAB760 /* TymchEnglish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TymchEnglish.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74600C2E2AD4A8D400AAB760 /* TymchEnglishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TymchEnglishApp.swift; sourceTree = "<group>"; };
+		74600C322AD4A8D600AAB760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74600C352AD4A8D600AAB760 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		74600C3B2AD4A8D600AAB760 /* TymchEnglishTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TymchEnglishTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74600C3F2AD4A8D600AAB760 /* TymchEnglishTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TymchEnglishTests.swift; sourceTree = "<group>"; };
+		74600C452AD4A8D600AAB760 /* TymchEnglishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TymchEnglishUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74600C492AD4A8D600AAB760 /* TymchEnglishUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TymchEnglishUITests.swift; sourceTree = "<group>"; };
+		74600C4B2AD4A8D600AAB760 /* TymchEnglishUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TymchEnglishUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		74B802812B09575700106B17 /* StartScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenView.swift; sourceTree = "<group>"; };
+		74B802872B09952900106B17 /* PoemsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemsGridView.swift; sourceTree = "<group>"; };
+		74B8028B2B09986300106B17 /* PoemsDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemsDetailedView.swift; sourceTree = "<group>"; };
+		74B8028D2B09A85700106B17 /* PoemsCategoriesGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemsCategoriesGridView.swift; sourceTree = "<group>"; };
+		74E351C82B0ACBF5005E76F5 /* Poems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poems.swift; sourceTree = "<group>"; };
+		74E351CA2B0AE0EF005E76F5 /* PoemTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemTitleView.swift; sourceTree = "<group>"; };
+		74E351CC2B0AF02F005E76F5 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74600C282AD4A8D400AAB760 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74600C382AD4A8D600AAB760 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74600C422AD4A8D600AAB760 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74600C222AD4A8D400AAB760 = {
+			isa = PBXGroup;
+			children = (
+				74600C2D2AD4A8D400AAB760 /* TymchEnglish */,
+				74600C3E2AD4A8D600AAB760 /* TymchEnglishTests */,
+				74600C482AD4A8D600AAB760 /* TymchEnglishUITests */,
+				74600C2C2AD4A8D400AAB760 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74600C2C2AD4A8D400AAB760 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74600C2B2AD4A8D400AAB760 /* TymchEnglish.app */,
+				74600C3B2AD4A8D600AAB760 /* TymchEnglishTests.xctest */,
+				74600C452AD4A8D600AAB760 /* TymchEnglishUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74600C2D2AD4A8D400AAB760 /* TymchEnglish */ = {
+			isa = PBXGroup;
+			children = (
+				74600C2E2AD4A8D400AAB760 /* TymchEnglishApp.swift */,
+				74B802812B09575700106B17 /* StartScreenView.swift */,
+				74029B012B0A6A9C007A6FBF /* TymchEnglishTabView.swift */,
+				74B8028D2B09A85700106B17 /* PoemsCategoriesGridView.swift */,
+				74B802872B09952900106B17 /* PoemsGridView.swift */,
+				74B8028B2B09986300106B17 /* PoemsDetailedView.swift */,
+				74E351CA2B0AE0EF005E76F5 /* PoemTitleView.swift */,
+				74E351C82B0ACBF5005E76F5 /* Poems.swift */,
+				74029B032B0A6C19007A6FBF /* InformationView.swift */,
+				74029B052B0A6D4D007A6FBF /* FavouritePoemListView.swift */,
+				74E351CC2B0AF02F005E76F5 /* BackgroundView.swift */,
+				74432D992B084EC70003790E /* AppButton.swift */,
+				74600C322AD4A8D600AAB760 /* Assets.xcassets */,
+				74600C342AD4A8D600AAB760 /* Preview Content */,
+			);
+			path = TymchEnglish;
+			sourceTree = "<group>";
+		};
+		74600C342AD4A8D600AAB760 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				74600C352AD4A8D600AAB760 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		74600C3E2AD4A8D600AAB760 /* TymchEnglishTests */ = {
+			isa = PBXGroup;
+			children = (
+				74600C3F2AD4A8D600AAB760 /* TymchEnglishTests.swift */,
+			);
+			path = TymchEnglishTests;
+			sourceTree = "<group>";
+		};
+		74600C482AD4A8D600AAB760 /* TymchEnglishUITests */ = {
+			isa = PBXGroup;
+			children = (
+				74600C492AD4A8D600AAB760 /* TymchEnglishUITests.swift */,
+				74600C4B2AD4A8D600AAB760 /* TymchEnglishUITestsLaunchTests.swift */,
+			);
+			path = TymchEnglishUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74600C2A2AD4A8D400AAB760 /* TymchEnglish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74600C4F2AD4A8D600AAB760 /* Build configuration list for PBXNativeTarget "TymchEnglish" */;
+			buildPhases = (
+				74600C272AD4A8D400AAB760 /* Sources */,
+				74600C282AD4A8D400AAB760 /* Frameworks */,
+				74600C292AD4A8D400AAB760 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TymchEnglish;
+			productName = TymchEnglish;
+			productReference = 74600C2B2AD4A8D400AAB760 /* TymchEnglish.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74600C3A2AD4A8D600AAB760 /* TymchEnglishTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74600C522AD4A8D600AAB760 /* Build configuration list for PBXNativeTarget "TymchEnglishTests" */;
+			buildPhases = (
+				74600C372AD4A8D600AAB760 /* Sources */,
+				74600C382AD4A8D600AAB760 /* Frameworks */,
+				74600C392AD4A8D600AAB760 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74600C3D2AD4A8D600AAB760 /* PBXTargetDependency */,
+			);
+			name = TymchEnglishTests;
+			productName = TymchEnglishTests;
+			productReference = 74600C3B2AD4A8D600AAB760 /* TymchEnglishTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		74600C442AD4A8D600AAB760 /* TymchEnglishUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74600C552AD4A8D600AAB760 /* Build configuration list for PBXNativeTarget "TymchEnglishUITests" */;
+			buildPhases = (
+				74600C412AD4A8D600AAB760 /* Sources */,
+				74600C422AD4A8D600AAB760 /* Frameworks */,
+				74600C432AD4A8D600AAB760 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74600C472AD4A8D600AAB760 /* PBXTargetDependency */,
+			);
+			name = TymchEnglishUITests;
+			productName = TymchEnglishUITests;
+			productReference = 74600C452AD4A8D600AAB760 /* TymchEnglishUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74600C232AD4A8D400AAB760 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					74600C2A2AD4A8D400AAB760 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					74600C3A2AD4A8D600AAB760 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 74600C2A2AD4A8D400AAB760;
+					};
+					74600C442AD4A8D600AAB760 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 74600C2A2AD4A8D400AAB760;
+					};
+				};
+			};
+			buildConfigurationList = 74600C262AD4A8D400AAB760 /* Build configuration list for PBXProject "TymchEnglish" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74600C222AD4A8D400AAB760;
+			productRefGroup = 74600C2C2AD4A8D400AAB760 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74600C2A2AD4A8D400AAB760 /* TymchEnglish */,
+				74600C3A2AD4A8D600AAB760 /* TymchEnglishTests */,
+				74600C442AD4A8D600AAB760 /* TymchEnglishUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74600C292AD4A8D400AAB760 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74600C362AD4A8D600AAB760 /* Preview Assets.xcassets in Resources */,
+				74600C332AD4A8D600AAB760 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74600C392AD4A8D600AAB760 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74600C432AD4A8D600AAB760 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74600C272AD4A8D400AAB760 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74B8028C2B09986300106B17 /* PoemsDetailedView.swift in Sources */,
+				74029B042B0A6C19007A6FBF /* InformationView.swift in Sources */,
+				74029B022B0A6A9C007A6FBF /* TymchEnglishTabView.swift in Sources */,
+				74B8028E2B09A85700106B17 /* PoemsCategoriesGridView.swift in Sources */,
+				74432D9A2B084EC70003790E /* AppButton.swift in Sources */,
+				74B802822B09575700106B17 /* StartScreenView.swift in Sources */,
+				74E351CD2B0AF02F005E76F5 /* BackgroundView.swift in Sources */,
+				74E351C92B0ACBF5005E76F5 /* Poems.swift in Sources */,
+				74600C2F2AD4A8D400AAB760 /* TymchEnglishApp.swift in Sources */,
+				74029B062B0A6D4D007A6FBF /* FavouritePoemListView.swift in Sources */,
+				74B802882B09952900106B17 /* PoemsGridView.swift in Sources */,
+				74E351CB2B0AE0EF005E76F5 /* PoemTitleView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74600C372AD4A8D600AAB760 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74600C402AD4A8D600AAB760 /* TymchEnglishTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74600C412AD4A8D600AAB760 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74600C4A2AD4A8D600AAB760 /* TymchEnglishUITests.swift in Sources */,
+				74600C4C2AD4A8D600AAB760 /* TymchEnglishUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74600C3D2AD4A8D600AAB760 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74600C2A2AD4A8D400AAB760 /* TymchEnglish */;
+			targetProxy = 74600C3C2AD4A8D600AAB760 /* PBXContainerItemProxy */;
+		};
+		74600C472AD4A8D600AAB760 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74600C2A2AD4A8D400AAB760 /* TymchEnglish */;
+			targetProxy = 74600C462AD4A8D600AAB760 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		74600C4D2AD4A8D600AAB760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		74600C4E2AD4A8D600AAB760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74600C502AD4A8D600AAB760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TymchEnglish/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Homeschool.TymchEnglish;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		74600C512AD4A8D600AAB760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TymchEnglish/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Homeschool.TymchEnglish;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		74600C532AD4A8D600AAB760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Homeschool.TymchEnglishTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TymchEnglish.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TymchEnglish";
+			};
+			name = Debug;
+		};
+		74600C542AD4A8D600AAB760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Homeschool.TymchEnglishTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TymchEnglish.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TymchEnglish";
+			};
+			name = Release;
+		};
+		74600C562AD4A8D600AAB760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Homeschool.TymchEnglishUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TymchEnglish;
+			};
+			name = Debug;
+		};
+		74600C572AD4A8D600AAB760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Homeschool.TymchEnglishUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TymchEnglish;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74600C262AD4A8D400AAB760 /* Build configuration list for PBXProject "TymchEnglish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74600C4D2AD4A8D600AAB760 /* Debug */,
+				74600C4E2AD4A8D600AAB760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74600C4F2AD4A8D600AAB760 /* Build configuration list for PBXNativeTarget "TymchEnglish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74600C502AD4A8D600AAB760 /* Debug */,
+				74600C512AD4A8D600AAB760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74600C522AD4A8D600AAB760 /* Build configuration list for PBXNativeTarget "TymchEnglishTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74600C532AD4A8D600AAB760 /* Debug */,
+				74600C542AD4A8D600AAB760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74600C552AD4A8D600AAB760 /* Build configuration list for PBXNativeTarget "TymchEnglishUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74600C562AD4A8D600AAB760 /* Debug */,
+				74600C572AD4A8D600AAB760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74600C232AD4A8D400AAB760 /* Project object */;
+}
