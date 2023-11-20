@@ -1,42 +1,17 @@
 //
-//  PoemsGridView.swift
+//  PoemTitleView.swift
 //  TymchEnglish
 //
-//  Created by Irene Tymchenko on 18.11.2023.
+//  Created by Irene Tymchenko on 19.11.2023.
 //
 
 import SwiftUI
 
-struct PoemsGridVIew: View {
+struct PoemTitleView: View {
     
-    let columns: [GridItem] = [GridItem(.flexible())]
+    var title: String
+    var imageName: String
     
-    var body: some View {
-        
-        NavigationStack {
-            
-            ZStack{
-                
-                BackgroundView()
-                
-                ScrollView {
-                    LazyVGrid (columns: columns) {
-                        ItemGridView()
-                        ItemGridView()
-                        ItemGridView()
-                        ItemGridView()
-                    }
-                }
-            }.navigationTitle("Poems about animals")
-        }
-    }
-}
-
-#Preview {
-    PoemsGridVIew()
-}
-
-struct ItemGridView: View {
     var body: some View {
         RoundedRectangle(cornerRadius: 10)
             .frame(height: 120)
@@ -44,16 +19,17 @@ struct ItemGridView: View {
             .overlay {
                 RoundedRectangle(cornerRadius: 10).stroke(.pinkLilac, lineWidth: 2)
             }
-            .padding()
+            .padding(.horizontal)
+            .padding(.vertical, 8)
             .overlay{
                 HStack {
-                    Image("imagePlaceholder")
+                    Image(imageName)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
                         .cornerRadius(8)
                         .padding()
-                    Text ("Baa-Baa Black Sheep")
+                    Text (title)
                         .font(.headline)
                         .foregroundStyle(.lightRasbery)
                         .scaledToFit()
@@ -63,3 +39,7 @@ struct ItemGridView: View {
     }
 }
 
+
+#Preview {
+    PoemTitleView(title: MockData.samplePoem.title, imageName: MockData.samplePoem.imageName)
+}

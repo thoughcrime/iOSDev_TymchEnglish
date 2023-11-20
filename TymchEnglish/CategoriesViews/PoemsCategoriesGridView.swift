@@ -9,7 +9,6 @@ import SwiftUI
 
 struct PoemsCategoriesGridView: View {
     
-    let columns: [GridItem] = [GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
         
@@ -18,15 +17,14 @@ struct PoemsCategoriesGridView: View {
             ZStack{
                 
                 BackgroundView()
-                
-                
-                    LazyVGrid (columns: columns) {
-                        ItemGridView()
-                        ItemGridView()
-                        ItemGridView()
-                        ItemGridView()
+                ScrollView {
+                    LazyVGrid (columns: [GridItem(.flexible())]) {
+                        ForEach (PoemCategories.categories, id:\.id) {category in NavigationLink(value:category) {
+                            CategoryTitleView(category: category)
+                        }
+                        }
                     }
-                
+                }
             }.navigationTitle("Categories")
         }
     }

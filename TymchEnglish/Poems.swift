@@ -11,7 +11,7 @@ struct Poem: Hashable, Identifiable {
     
     let id = UUID()
     let title: String
-    let category: category
+    let category: PoemCategory.category
     let imageName: String
     let videoLink: String?
     let lyrics: String
@@ -31,15 +31,3 @@ struct MockData {
 }
 
 
-enum category {
-    case animals
-    case dailyRoutines
-    case actions
-    case bodyParts
-    case colors
-    case emotions
-    case themed
-    case lullabye
-    case parachute
-    case transportation
-}

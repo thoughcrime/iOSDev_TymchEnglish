@@ -53,7 +53,7 @@ struct PoemsDetailedView: View {
                             .padding(.trailing, 50)
                     })
                     
-                    Link("Watch the video", destination: URL(string:"https://youtu.be/dQw4w9WgXcQ")!)
+                    Link("Watch the video", destination: URL(string:poem.videoLink!)!)
                 }
                 Spacer()
             }

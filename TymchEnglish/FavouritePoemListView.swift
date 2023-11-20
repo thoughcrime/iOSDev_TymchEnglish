@@ -9,10 +9,14 @@ import SwiftUI
 
 struct FavouritePoemListView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            
+            BackgroundView()
+            
+            Text("This part fo the code is not implemented... yet. There is going to be a list poems/chants that you saved - marked favourite.")
+        }
     }
 }
-
 #Preview {
     FavouritePoemListView()
 }
