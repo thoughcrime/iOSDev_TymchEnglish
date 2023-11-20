@@ -65,7 +65,7 @@
 		74B8028D2B09A85700106B17 /* PoemsCategoriesGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemsCategoriesGridView.swift; sourceTree = "<group>"; };
 		74E351C82B0ACBF5005E76F5 /* Poems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poems.swift; sourceTree = "<group>"; };
 		74E351CC2B0AF02F005E76F5 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
-		74E351CF2B0AF64A005E76F5 /* PoemTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemTitleView.swift; sourceTree = "<group>"; };
+		74E351CF2B0AF64A005E76F5 /* PoemTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PoemTitleView.swift; path = CategoriesViews/PoemTitleView.swift; sourceTree = "<group>"; };
 		74E351D12B0AF6F1005E76F5 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		74E351D52B0B06A3005E76F5 /* CategoryTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTitleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +122,7 @@
 				74B802812B09575700106B17 /* StartScreenView.swift */,
 				74029B012B0A6A9C007A6FBF /* TymchEnglishTabView.swift */,
 				74B8028B2B09986300106B17 /* PoemsDetailedView.swift */,
+				74E351CF2B0AF64A005E76F5 /* PoemTitleView.swift */,
 				74E351C82B0ACBF5005E76F5 /* Poems.swift */,
 				74E351D12B0AF6F1005E76F5 /* Categories.swift */,
 				74E351CE2B0AF58D005E76F5 /* CategoriesViews */,
@@ -165,7 +166,6 @@
 			children = (
 				74B8028D2B09A85700106B17 /* PoemsCategoriesGridView.swift */,
 				74B802872B09952900106B17 /* PoemsGridView.swift */,
-				74E351CF2B0AF64A005E76F5 /* PoemTitleView.swift */,
 				74E351D52B0B06A3005E76F5 /* CategoryTitleView.swift */,
 			);
 			path = CategoriesViews;

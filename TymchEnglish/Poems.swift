@@ -13,7 +13,7 @@ struct Poem: Hashable, Identifiable {
     let title: String
     let category: PoemCategory.category
     let imageName: String
-    let videoLink: String?
+    let videoLink: String
     let lyrics: String
     
     

@@ -52,8 +52,8 @@ struct PoemsDetailedView: View {
                             .frame(width:44, height: 44)
                             .padding(.trailing, 50)
                     })
-                    
-                    Link("Watch the video", destination: URL(string:poem.videoLink!)!)
+                    // Forced unwrapping is only for development purpose, will not be in the final version
+                    Link("Watch the video", destination: URL(string:poem.videoLink)!)
                 }
                 Spacer()
             }

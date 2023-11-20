@@ -28,6 +28,7 @@ struct CategoryTitleView: View {
                         .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
                         .cornerRadius(8)
                         .padding()
+                    Spacer()
                     Text (category.title)
                         .font(.headline)
                         .fixedSize(horizontal: false, vertical: true)
