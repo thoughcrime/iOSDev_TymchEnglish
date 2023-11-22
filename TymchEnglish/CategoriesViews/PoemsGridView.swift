@@ -7,11 +7,9 @@
 
 import SwiftUI
 
-struct PoemsGridVIew: View {
+struct PoemsListVIew: View {
     
     var categoryTytle:String
-    
-    let columns: [GridItem] = [GridItem(.flexible())]
     
     var body: some View {
         
@@ -41,7 +39,7 @@ struct PoemsGridVIew: View {
 }
 
 #Preview {
-    PoemsGridVIew(categoryTytle: "Poems about animals")
+    PoemsListVIew(categoryTytle: "Poems about animals")
 }
 
 
