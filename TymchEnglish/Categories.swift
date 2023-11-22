@@ -15,7 +15,7 @@ struct PoemCategory: Hashable, Identifiable {
     
     
     enum category {
-        case animals
+        case animals 
         case dailyRoutines
         case actions
         case bodyParts
