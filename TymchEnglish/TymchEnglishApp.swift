@@ -11,7 +11,7 @@ import SwiftUI
 struct TymchEnglishApp: App {
     var body: some Scene {
         WindowGroup {
-            PoemsListVIew(categoryTytle: "Poems")
+            TymchEnglishTabView()
         }
     }
 }

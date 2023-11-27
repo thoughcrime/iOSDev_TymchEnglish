@@ -10,19 +10,22 @@ import SwiftUI
 struct TymchEnglishTabView: View {
     var body: some View {
         TabView {
-            PoemsCategoriesGridView()
+            PoemsCategoriesListView()
                 .tabItem {
                     Image (systemName: "book.closed")
+                    Text("Poems")
                 }
             
             FavouritePoemListView()
                 .tabItem {
                     Image(systemName: "heart")
+                    Text("Liked")
                 }
             
             InformationView()
                 .tabItem {
                     Image (systemName: "info.square.fill")
+                    Text("Info")
                 }
         }.tint(.lightRasbery)
     }

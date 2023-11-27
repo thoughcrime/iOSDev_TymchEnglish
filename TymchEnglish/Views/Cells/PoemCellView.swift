@@ -1,5 +1,5 @@
 //
-//  PoemTitleView.swift
+//  PoemCellView.swift
 //  TymchEnglish
 //
 //  Created by Irene Tymchenko on 19.11.2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PoemTitleView: View {
+struct PoemCellView: View {
     
     var title: String
     var imageName: String
@@ -31,5 +31,5 @@ struct PoemTitleView: View {
 
 
 #Preview {
-    PoemTitleView(title: MockData.samplePoem.title, imageName: MockData.samplePoem.imageName)
+    PoemCellView(title: MockData.samplePoem.title, imageName: MockData.samplePoem.imageName)
 }

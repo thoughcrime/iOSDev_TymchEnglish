@@ -31,7 +31,7 @@ struct StartScreenVew: View {
                     Spacer()
                 
                 Button(action: {
-                    
+                print("A")
                 }, label: {
                     AppButton(text: "Start")
                 })

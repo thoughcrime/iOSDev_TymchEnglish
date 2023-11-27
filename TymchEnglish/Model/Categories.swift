@@ -30,7 +30,7 @@ struct PoemCategory: Hashable, Identifiable {
     
 }
 
-struct PoemCategories {
+struct PoemCategories: Hashable {
     
     static let sampleCategory = PoemCategory(id: .animals, title: "Poems and songs about animals and insects", categoryImage: "imagePlaceholder")
     

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PoemsListVIew: View {
     
-    var categoryTytle:String
+    var category: PoemCategory
     
     var body: some View {
         
@@ -17,20 +17,20 @@ struct PoemsListVIew: View {
             
             List{
                 Section {
-                    PoemTitleView(title: MockData.samplePoem.title, imageName: MockData.samplePoem.imageName)
-                    PoemTitleView(title: MockData.samplePoem.title, imageName: MockData.samplePoem.imageName)
+                    PoemCellView(title: MockData.samplePoem.title, imageName: MockData.samplePoem.imageName)
+                    PoemCellView(title: MockData.samplePoem.title, imageName: MockData.samplePoem.imageName)
                 }header: {
                     Text("Section 1").font(.headline).foregroundStyle(.lightRasbery)
                 }
                 
                 Section {
-                    PoemTitleView(title: MockData.samplePoem.title, imageName: MockData.samplePoem.imageName)
-                    PoemTitleView(title: MockData.samplePoem.title, imageName: MockData.samplePoem.imageName)
+                    PoemCellView(title: MockData.samplePoem.title, imageName: MockData.samplePoem.imageName)
+                    PoemCellView(title: MockData.samplePoem.title, imageName: MockData.samplePoem.imageName)
                 }header: {
                     Text ("Section 2").font(.headline).foregroundStyle(.lightRasbery)
                 }
             }.listStyle(.automatic)
-                .navigationTitle(PoemCategories.sampleCategory.title)
+                .navigationTitle(category.title)
             .navigationBarTitleDisplayMode(.inline)
             .background(BackgroundView())
         }.scrollContentBackground(.hidden)
@@ -39,7 +39,7 @@ struct PoemsListVIew: View {
 }
 
 #Preview {
-    PoemsListVIew(categoryTytle: "Poems about animals")
+    PoemsListVIew(category: PoemCategories.sampleCategory)
 }
 
 

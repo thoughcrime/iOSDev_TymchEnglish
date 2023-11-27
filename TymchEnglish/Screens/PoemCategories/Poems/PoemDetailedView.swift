@@ -1,5 +1,5 @@
 //
-//  PoemsDetailedView.swift
+//  PoemDetailedView.swift
 //  TymchEnglish
 //
 //  Created by Irene Tymchenko on 18.11.2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PoemsDetailedView: View {
+struct PoemDetailedView: View {
     
     var poem = MockData.samplePoem
     
@@ -61,5 +61,5 @@ struct PoemsDetailedView: View {
     }
 }
 #Preview {
-    PoemsDetailedView()
+    PoemDetailedView()
 }

@@ -1,5 +1,5 @@
 //
-//  PoemsCategoriesGridView.swift
+//  PoemsCategoriesListView.swift
 //  TymchEnglish
 //
 //  Created by Irene Tymchenko on 18.11.2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PoemsCategoriesGridView: View {
+struct PoemsCategoriesListView: View {
     
     
     var body: some View {
@@ -15,21 +15,24 @@ struct PoemsCategoriesGridView: View {
         NavigationStack {
             
             ZStack{
-                
                 BackgroundView()
-                ScrollView {
+                ScrollView{
                     LazyVGrid (columns: [GridItem(.flexible())]) {
                         ForEach (PoemCategories.categories, id:\.id) {category in NavigationLink(value:category) {
-                            CategoryTitleView(category: category)
+                            CategoryCellView(category: category)
                         }
                         }
                     }
                 }
             }.navigationTitle("Categories")
-        }
+                .navigationDestination(for: PoemCategory.self) {category in
+                    PoemsListVIew(category: category)
+                }
+            
+        }.scrollContentBackground(.hidden)
     }
 }
 
 #Preview {
-    PoemsCategoriesGridView()
+    PoemsCategoriesListView()
 }

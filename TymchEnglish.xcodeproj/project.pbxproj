@@ -18,14 +18,14 @@
 		74600C4A2AD4A8D600AAB760 /* TymchEnglishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74600C492AD4A8D600AAB760 /* TymchEnglishUITests.swift */; };
 		74600C4C2AD4A8D600AAB760 /* TymchEnglishUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74600C4B2AD4A8D600AAB760 /* TymchEnglishUITestsLaunchTests.swift */; };
 		74B802822B09575700106B17 /* StartScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B802812B09575700106B17 /* StartScreenView.swift */; };
-		74B802882B09952900106B17 /* PoemsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B802872B09952900106B17 /* PoemsGridView.swift */; };
-		74B8028C2B09986300106B17 /* PoemsDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8028B2B09986300106B17 /* PoemsDetailedView.swift */; };
-		74B8028E2B09A85700106B17 /* PoemsCategoriesGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8028D2B09A85700106B17 /* PoemsCategoriesGridView.swift */; };
+		74B802882B09952900106B17 /* PoemsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B802872B09952900106B17 /* PoemsListView.swift */; };
+		74B8028C2B09986300106B17 /* PoemDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8028B2B09986300106B17 /* PoemDetailedView.swift */; };
+		74B8028E2B09A85700106B17 /* PoemsCategoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8028D2B09A85700106B17 /* PoemsCategoriesListView.swift */; };
 		74E351C92B0ACBF5005E76F5 /* Poems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E351C82B0ACBF5005E76F5 /* Poems.swift */; };
 		74E351CD2B0AF02F005E76F5 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E351CC2B0AF02F005E76F5 /* BackgroundView.swift */; };
-		74E351D02B0AF64A005E76F5 /* PoemTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E351CF2B0AF64A005E76F5 /* PoemTitleView.swift */; };
+		74E351D02B0AF64A005E76F5 /* PoemCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E351CF2B0AF64A005E76F5 /* PoemCellView.swift */; };
 		74E351D22B0AF6F1005E76F5 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E351D12B0AF6F1005E76F5 /* Categories.swift */; };
-		74E351D62B0B06A3005E76F5 /* CategoryTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E351D52B0B06A3005E76F5 /* CategoryTitleView.swift */; };
+		74E351D62B0B06A3005E76F5 /* CategoryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E351D52B0B06A3005E76F5 /* CategoryCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,14 +60,14 @@
 		74600C492AD4A8D600AAB760 /* TymchEnglishUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TymchEnglishUITests.swift; sourceTree = "<group>"; };
 		74600C4B2AD4A8D600AAB760 /* TymchEnglishUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TymchEnglishUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		74B802812B09575700106B17 /* StartScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenView.swift; sourceTree = "<group>"; };
-		74B802872B09952900106B17 /* PoemsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemsGridView.swift; sourceTree = "<group>"; };
-		74B8028B2B09986300106B17 /* PoemsDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemsDetailedView.swift; sourceTree = "<group>"; };
-		74B8028D2B09A85700106B17 /* PoemsCategoriesGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemsCategoriesGridView.swift; sourceTree = "<group>"; };
+		74B802872B09952900106B17 /* PoemsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemsListView.swift; sourceTree = "<group>"; };
+		74B8028B2B09986300106B17 /* PoemDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemDetailedView.swift; sourceTree = "<group>"; };
+		74B8028D2B09A85700106B17 /* PoemsCategoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemsCategoriesListView.swift; sourceTree = "<group>"; };
 		74E351C82B0ACBF5005E76F5 /* Poems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poems.swift; sourceTree = "<group>"; };
 		74E351CC2B0AF02F005E76F5 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
-		74E351CF2B0AF64A005E76F5 /* PoemTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemTitleView.swift; sourceTree = "<group>"; };
+		74E351CF2B0AF64A005E76F5 /* PoemCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemCellView.swift; sourceTree = "<group>"; };
 		74E351D12B0AF6F1005E76F5 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
-		74E351D52B0B06A3005E76F5 /* CategoryTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTitleView.swift; sourceTree = "<group>"; };
+		74E351D52B0B06A3005E76F5 /* CategoryCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +95,87 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7415ABE62B1446DF001B4BE4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				74432D992B084EC70003790E /* AppButton.swift */,
+				74E351CC2B0AF02F005E76F5 /* BackgroundView.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7415ABE72B1446ED001B4BE4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7415ABED2B144A66001B4BE4 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7415ABE82B1446F4001B4BE4 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				74B802812B09575700106B17 /* StartScreenView.swift */,
+				74029B012B0A6A9C007A6FBF /* TymchEnglishTabView.swift */,
+				7415ABE92B144705001B4BE4 /* PoemCategories */,
+				7415ABEB2B14496D001B4BE4 /* Liked */,
+				7415ABEC2B144973001B4BE4 /* Info */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		7415ABE92B144705001B4BE4 /* PoemCategories */ = {
+			isa = PBXGroup;
+			children = (
+				74B8028D2B09A85700106B17 /* PoemsCategoriesListView.swift */,
+				7415ABEF2B144DB7001B4BE4 /* Poems */,
+			);
+			path = PoemCategories;
+			sourceTree = "<group>";
+		};
+		7415ABEB2B14496D001B4BE4 /* Liked */ = {
+			isa = PBXGroup;
+			children = (
+				74029B052B0A6D4D007A6FBF /* FavouritePoemListView.swift */,
+			);
+			path = Liked;
+			sourceTree = "<group>";
+		};
+		7415ABEC2B144973001B4BE4 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				74029B032B0A6C19007A6FBF /* InformationView.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		7415ABED2B144A66001B4BE4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				74E351CF2B0AF64A005E76F5 /* PoemCellView.swift */,
+				74E351D52B0B06A3005E76F5 /* CategoryCellView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7415ABEE2B144AC4001B4BE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74E351C82B0ACBF5005E76F5 /* Poems.swift */,
+				74E351D12B0AF6F1005E76F5 /* Categories.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7415ABEF2B144DB7001B4BE4 /* Poems */ = {
+			isa = PBXGroup;
+			children = (
+				74B802872B09952900106B17 /* PoemsListView.swift */,
+				74B8028B2B09986300106B17 /* PoemDetailedView.swift */,
+			);
+			path = Poems;
+			sourceTree = "<group>";
+		};
 		74600C222AD4A8D400AAB760 = {
 			isa = PBXGroup;
 			children = (
@@ -119,16 +200,10 @@
 			isa = PBXGroup;
 			children = (
 				74600C2E2AD4A8D400AAB760 /* TymchEnglishApp.swift */,
-				74B802812B09575700106B17 /* StartScreenView.swift */,
-				74029B012B0A6A9C007A6FBF /* TymchEnglishTabView.swift */,
-				74E351C82B0ACBF5005E76F5 /* Poems.swift */,
-				74E351D12B0AF6F1005E76F5 /* Categories.swift */,
-				74DF41312B0D81B800A21B6D /* PoemsView */,
-				74E351CE2B0AF58D005E76F5 /* CategoriesViews */,
-				74029B032B0A6C19007A6FBF /* InformationView.swift */,
-				74029B052B0A6D4D007A6FBF /* FavouritePoemListView.swift */,
-				74E351CC2B0AF02F005E76F5 /* BackgroundView.swift */,
-				74432D992B084EC70003790E /* AppButton.swift */,
+				7415ABE62B1446DF001B4BE4 /* Utilities */,
+				7415ABEE2B144AC4001B4BE4 /* Model */,
+				7415ABE82B1446F4001B4BE4 /* Screens */,
+				7415ABE72B1446ED001B4BE4 /* Views */,
 				74600C322AD4A8D600AAB760 /* Assets.xcassets */,
 				74600C342AD4A8D600AAB760 /* Preview Content */,
 			);
@@ -158,25 +233,6 @@
 				74600C4B2AD4A8D600AAB760 /* TymchEnglishUITestsLaunchTests.swift */,
 			);
 			path = TymchEnglishUITests;
-			sourceTree = "<group>";
-		};
-		74DF41312B0D81B800A21B6D /* PoemsView */ = {
-			isa = PBXGroup;
-			children = (
-				74B8028B2B09986300106B17 /* PoemsDetailedView.swift */,
-				74E351CF2B0AF64A005E76F5 /* PoemTitleView.swift */,
-			);
-			path = PoemsView;
-			sourceTree = "<group>";
-		};
-		74E351CE2B0AF58D005E76F5 /* CategoriesViews */ = {
-			isa = PBXGroup;
-			children = (
-				74B8028D2B09A85700106B17 /* PoemsCategoriesGridView.swift */,
-				74B802872B09952900106B17 /* PoemsGridView.swift */,
-				74E351D52B0B06A3005E76F5 /* CategoryTitleView.swift */,
-			);
-			path = CategoriesViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,20 +365,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74E351D62B0B06A3005E76F5 /* CategoryTitleView.swift in Sources */,
-				74B8028C2B09986300106B17 /* PoemsDetailedView.swift in Sources */,
+				74E351D62B0B06A3005E76F5 /* CategoryCellView.swift in Sources */,
+				74B8028C2B09986300106B17 /* PoemDetailedView.swift in Sources */,
 				74E351D22B0AF6F1005E76F5 /* Categories.swift in Sources */,
 				74029B042B0A6C19007A6FBF /* InformationView.swift in Sources */,
-				74E351D02B0AF64A005E76F5 /* PoemTitleView.swift in Sources */,
+				74E351D02B0AF64A005E76F5 /* PoemCellView.swift in Sources */,
 				74029B022B0A6A9C007A6FBF /* TymchEnglishTabView.swift in Sources */,
-				74B8028E2B09A85700106B17 /* PoemsCategoriesGridView.swift in Sources */,
+				74B8028E2B09A85700106B17 /* PoemsCategoriesListView.swift in Sources */,
 				74432D9A2B084EC70003790E /* AppButton.swift in Sources */,
 				74B802822B09575700106B17 /* StartScreenView.swift in Sources */,
 				74E351CD2B0AF02F005E76F5 /* BackgroundView.swift in Sources */,
 				74E351C92B0ACBF5005E76F5 /* Poems.swift in Sources */,
 				74600C2F2AD4A8D400AAB760 /* TymchEnglishApp.swift in Sources */,
 				74029B062B0A6D4D007A6FBF /* FavouritePoemListView.swift in Sources */,
-				74B802882B09952900106B17 /* PoemsGridView.swift in Sources */,
+				74B802882B09952900106B17 /* PoemsListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

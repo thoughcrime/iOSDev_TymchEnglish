@@ -1,5 +1,5 @@
 //
-//  CategoryTitleView.swift
+//  CategoryCellView.swift
 //  TymchEnglish
 //
 //  Created by Irene Tymchenko on 19.11.2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CategoryTitleView: View {
+struct CategoryCellView: View {
     
     let category: PoemCategory
     
@@ -15,11 +15,10 @@ struct CategoryTitleView: View {
         RoundedRectangle(cornerRadius: 10)
             .frame(height: 120)
             .foregroundStyle(.white)
+            .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/, x:5, y:5)
             .overlay {
                 RoundedRectangle(cornerRadius: 10).stroke(.pinkLilac, lineWidth: 2)
             }
-            .padding(.horizontal)
-            .padding(.vertical, 8)
             .overlay{
                 HStack {
                     Image(category.categoryImage)
@@ -38,9 +37,11 @@ struct CategoryTitleView: View {
                         .minimumScaleFactor(0.6)
                         .padding(.trailing, 10)
                 }.padding()
-            }
+            }.padding(.horizontal)
+            .padding(.vertical, 10)
+        
     }
 }
 #Preview {
-    CategoryTitleView( category: PoemCategories.sampleCategory)
+    CategoryCellView( category: PoemCategories.sampleCategory)
 }
