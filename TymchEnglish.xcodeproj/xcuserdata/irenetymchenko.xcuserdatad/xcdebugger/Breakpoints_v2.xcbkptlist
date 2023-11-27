@@ -3,4 +3,54 @@
    uuid = "17BCB3F4-0FE8-426E-9F7B-DDA9ECE7AFE5"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2C8C509F-F778-4383-A189-EC728D9BB93F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TymchEnglish/Screens/StartScreenView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "2C8C509F-F778-4383-A189-EC728D9BB93F - 87440ee689a3a695"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(TymchEnglish.LogoView, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.foregroundStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, SwiftUI.NavigationLink&lt;TymchEnglish.AppButton, TymchEnglish.PoemDetailedView&gt;, SwiftUI.Spacer)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(TymchEnglish.BackgroundView, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(TymchEnglish.LogoView, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.foregroundStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, SwiftUI.NavigationLink&lt;TymchEnglish.AppButton, TymchEnglish.PoemDetailedView&gt;, SwiftUI.Spacer)&gt;&gt;)&gt; in TymchEnglish.StartScreenVew.body.getter : some"
+                  moduleName = "TymchEnglish"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/irenetymchenko/Documents/iOSDev_TymchEnglish/TymchEnglish/Screens/StartScreenView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "2200">
+               </Location>
+               <Location
+                  uuid = "2C8C509F-F778-4383-A189-EC728D9BB93F - 86dab5aa63664c9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; TymchEnglish.PoemDetailedView in closure #1 () -&gt; SwiftUI.TupleView&lt;(TymchEnglish.LogoView, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.foregroundStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, SwiftUI.NavigationLink&lt;TymchEnglish.AppButton, TymchEnglish.PoemDetailedView&gt;, SwiftUI.Spacer)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(TymchEnglish.BackgroundView, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(TymchEnglish.LogoView, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.foregroundStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, SwiftUI.NavigationLink&lt;TymchEnglish.AppButton, TymchEnglish.PoemDetailedView&gt;, SwiftUI.Spacer)&gt;&gt;)&gt; in TymchEnglish.StartScreenVew.body.getter : some"
+                  moduleName = "TymchEnglish"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/irenetymchenko/Documents/iOSDev_TymchEnglish/TymchEnglish/Screens/StartScreenView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

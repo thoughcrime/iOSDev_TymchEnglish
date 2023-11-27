@@ -9,13 +9,14 @@ import SwiftUI
 
 struct StartScreenVew: View {
     var body: some View {
+        
         ZStack{
             
             BackgroundView()
             
             VStack {
                 LogoView(logoRadius: 200)
-                    
+                
                 Text("TymchEnglish©")
                     .font(.system(size: 20, weight: .light))
                     .foregroundColor(.lightRasbery)
@@ -26,20 +27,16 @@ struct StartScreenVew: View {
                     .font(.title)
                     .multilineTextAlignment(.center)
                     .foregroundStyle(.lightRasbery)
-                
-                
-                    Spacer()
-                
-                Button(action: {
-                print("A")
-                }, label: {
-                    AppButton(text: "Start")
-                })
                 Spacer()
                 
+                NavigationLink {
+                    TymchEnglishTabView()
+                } label: {
+                    AppButton(text: "Start")
+                }
+                Spacer()
             }
         }
-        
     }
 }
 

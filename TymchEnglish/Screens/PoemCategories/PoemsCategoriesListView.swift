@@ -26,7 +26,8 @@ struct PoemsCategoriesListView: View {
                 }
             }.navigationTitle("Categories")
                 .navigationDestination(for: PoemCategory.self) {category in
-                    PoemsListVIew(category: category)
+//                    PoemsListVIew(category: category)
+                    PoemDetailedView()
                 }
             
         }.scrollContentBackground(.hidden)

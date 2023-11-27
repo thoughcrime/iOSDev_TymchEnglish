@@ -33,13 +33,16 @@ struct PoemsListVIew: View {
                 .navigationTitle(category.title)
             .navigationBarTitleDisplayMode(.inline)
             .background(BackgroundView())
+            .navigationDestination(for: PoemCategory.self) {_ in
+                PoemDetailedView(poem: MockData.samplePoem)
+            }
         }.scrollContentBackground(.hidden)
     }
     
 }
 
 #Preview {
-    PoemsListVIew(category: PoemCategories.sampleCategory)
+    PoemsListVIew(category: PoemCategories.categories.first!)
 }
 
 
