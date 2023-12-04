@@ -9,7 +9,9 @@ import SwiftUI
 
 struct PoemDetailedView: View {
     
-    var poem = MockData.samplePoem
+    @EnvironmentObject var favourites: Favourites
+    
+    var poem: Poem
     
     var body: some View {
         ScrollView {
@@ -17,7 +19,9 @@ struct PoemDetailedView: View {
                 HStack {
                     Spacer()
                     Button(action: {
-                        
+                        if poem.isSaved == false {
+                            favourites.add(poem)
+                        }
                     }, label: {
                         Image(systemName: "heart")
                             .foregroundStyle(Color(.label))
@@ -61,5 +65,5 @@ struct PoemDetailedView: View {
     }
 }
 #Preview {
-    PoemDetailedView()
+    PoemDetailedView(poem: MockData.samplePoem)
 }

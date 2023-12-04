@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct StartScreenVew: View {
+    
+    @Binding var showingPopover: Bool
+    
     var body: some View {
         
         ZStack{
@@ -29,12 +32,13 @@ struct StartScreenVew: View {
                     .foregroundStyle(.lightRasbery)
                 Spacer()
                 
-                NavigationLink {
-                    TymchEnglishTabView()
+                Button {
+                    showingPopover = false
                 } label: {
                     AppButton(text: "Start")
                 }
                 Spacer()
+                
             }
         }
     }
@@ -43,7 +47,7 @@ struct StartScreenVew: View {
 
 struct ContentView_Preview: PreviewProvider {
     static var previews: some View{
-        StartScreenVew()
+        StartScreenVew(showingPopover: .constant(true))
     }
 }
 

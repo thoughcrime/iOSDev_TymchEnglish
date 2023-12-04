@@ -8,12 +8,29 @@
 import SwiftUI
 
 struct FavouritePoemListView: View {
+    
+    @State private var favourites = MockData.setOfSamplePoems
+//    @EnvironmentObject var favourites: Favourites
     var body: some View {
-        ZStack{
-            
-            BackgroundView()
-            
-            Text("This part fo the code is not implemented... yet. There is going to be a list poems/chants that you saved - marked favourite.")
+        NavigationStack{
+            ZStack{
+                BackgroundView()
+                VStack {
+                    List {
+                        ForEach(favourites/*.items*/) { poem in
+                            PoemCellView(title: poem.title, imageName: poem.imageName)
+                        }.onDelete(perform: { indexSet in
+                            favourites/*.items*/.remove(atOffsets: indexSet)
+                        })
+                    }
+                    .navigationTitle("Favourite poems")
+                    
+                }.scrollContentBackground(.hidden)
+                
+                if favourites/*.items*/.isEmpty {
+                    EmptyState()
+                }
+            }
         }
     }
 }

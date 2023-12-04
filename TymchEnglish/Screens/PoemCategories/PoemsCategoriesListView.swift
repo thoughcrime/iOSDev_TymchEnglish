@@ -18,19 +18,20 @@ struct PoemsCategoriesListView: View {
                 BackgroundView()
                 ScrollView{
                     LazyVGrid (columns: [GridItem(.flexible())]) {
-                        ForEach (PoemCategories.categories, id:\.id) {category in NavigationLink(value:category) {
-                            CategoryCellView(category: category)
-                        }
+                        ForEach (PoemCategories.categories) {category in
+                            NavigationLink {
+                                PoemsListVIew(category: category)
+                            } label: {
+                                CategoryCellView(category: category)
+                            }
                         }
                     }
-                }
-            }.navigationTitle("Categories")
-                .navigationDestination(for: PoemCategory.self) {category in
-//                    PoemsListVIew(category: category)
-                    PoemDetailedView()
-                }
+                }.navigationTitle("Categories")
+                
+            }
             
         }.scrollContentBackground(.hidden)
+            .navigationBarBackButtonHidden()
     }
 }
 

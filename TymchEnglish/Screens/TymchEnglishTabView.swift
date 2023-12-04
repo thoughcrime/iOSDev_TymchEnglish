@@ -8,26 +8,29 @@
 import SwiftUI
 
 struct TymchEnglishTabView: View {
+    
+    @State private var showingPopover = true
+    
     var body: some View {
         TabView {
             PoemsCategoriesListView()
                 .tabItem {
-                    Image (systemName: "book.closed")
-                    Text("Poems")
+                    Label("Poems", systemImage: "book.closed")
                 }
             
             FavouritePoemListView()
                 .tabItem {
-                    Image(systemName: "heart")
-                    Text("Liked")
+                    Label("Liked", systemImage: "heart")
                 }
             
             InformationView()
                 .tabItem {
-                    Image (systemName: "info.square.fill")
-                    Text("Info")
+                    Label("Contacts", systemImage: "info.square.fill")
                 }
         }.tint(.lightRasbery)
+            .popover(isPresented: $showingPopover) {
+                StartScreenVew(showingPopover: $showingPopover)
+            }
     }
 }
 

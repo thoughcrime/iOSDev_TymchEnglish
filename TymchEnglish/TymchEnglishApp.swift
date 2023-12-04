@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct TymchEnglishApp: App {
+    
+    var favourites = Favourites()
+    
     var body: some Scene {
         WindowGroup {
-            StartScreenVew()
+            TymchEnglishTabView().environmentObject(favourites)
         }
     }
 }

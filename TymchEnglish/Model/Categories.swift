@@ -7,15 +7,16 @@
 
 import Foundation
 
-struct PoemCategory: Hashable, Identifiable {
+struct PoemCategory: Hashable, Identifiable, Codable {
     
-    var id: category
+    var id = UUID()
+    var category: categories
     var title: String
     var categoryImage: String
     
     
-    enum category {
-        case animals 
+    enum categories: Codable {
+        case animals
         case dailyRoutines
         case actions
         case bodyParts
@@ -32,20 +33,20 @@ struct PoemCategory: Hashable, Identifiable {
 
 struct PoemCategories: Hashable {
     
-    static let sampleCategory = PoemCategory(id: .animals, title: "Poems and songs about animals and insects", categoryImage: "imagePlaceholder")
+    static let sampleCategory = PoemCategory(category: .animals, title: "Poems and songs about animals and insects", categoryImage: "imagePlaceholder")
     
     static let categories = [
-        PoemCategory(id: .animals, title: "Poems and songs about animals and insects", categoryImage: "imagePlaceholder"),
-        PoemCategory(id: .actions, title: "Action songs and rhymes", categoryImage: "imagePlaceholder"),
-        PoemCategory(id: .bodyParts, title: "Poems and songs about body parts", categoryImage: "imagePlaceholder"),
-        PoemCategory(id: .dailyRoutines, title: "Poems and songs about daily routines", categoryImage: "imagePlaceholder"),
-        PoemCategory(id: .colors, title: "Poems and songs about colors", categoryImage: "imagePlaceholder"),
-        PoemCategory(id: .emotions, title: "Poems and songs about emotions", categoryImage: "imagePlaceholder"),
-        PoemCategory(id: .themed, title: "Themed songs and poems", categoryImage: "imagePlaceholder"),
-        PoemCategory(id: .lullabye, title: "Lullabyes", categoryImage: "imagePlaceholder"),
-        PoemCategory(id: .parachute, title: "Parachute and scarf songs and rhymes", categoryImage: "imagePlaceholder"),
-        PoemCategory(id: .transportation, title: "Poems and songs about transportation", categoryImage: "imagePlaceholder"),
-        PoemCategory(id: .seasons, title: "Poems and songs about seasongs", categoryImage: "imagePlaceholder")
+        PoemCategory(category: .animals, title: "Poems and songs about animals and insects", categoryImage: "imagePlaceholder"),
+        PoemCategory(category: .actions, title: "Action songs and rhymes", categoryImage: "imagePlaceholder"),
+        PoemCategory(category: .bodyParts, title: "Poems and songs about body parts", categoryImage: "imagePlaceholder"),
+        PoemCategory(category: .dailyRoutines, title: "Poems and songs about daily routines", categoryImage: "imagePlaceholder"),
+        PoemCategory(category: .colors, title: "Poems and songs about colors", categoryImage: "imagePlaceholder"),
+        PoemCategory(category: .emotions, title: "Poems and songs about emotions", categoryImage: "imagePlaceholder"),
+        PoemCategory(category: .themed, title: "Themed songs and poems", categoryImage: "imagePlaceholder"),
+        PoemCategory(category: .lullabye, title: "Lullabyes", categoryImage: "imagePlaceholder"),
+        PoemCategory(category: .parachute, title: "Parachute and scarf songs and rhymes", categoryImage: "imagePlaceholder"),
+        PoemCategory(category: .transportation, title: "Poems and songs about transportation", categoryImage: "imagePlaceholder"),
+        PoemCategory(category: .seasons, title: "Poems and songs about seasongs", categoryImage: "imagePlaceholder")
     ]
 }
 
