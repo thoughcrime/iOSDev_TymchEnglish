@@ -14,7 +14,6 @@ struct PoemsListVIew: View {
     var body: some View {
         
         NavigationStack {
-            
             List (Poems.poems) {poem in
                 if poem.category == category.category {
                     NavigationLink {

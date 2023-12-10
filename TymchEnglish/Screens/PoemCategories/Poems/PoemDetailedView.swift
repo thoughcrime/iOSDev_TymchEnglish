@@ -19,14 +19,14 @@ struct PoemDetailedView: View {
                 HStack {
                     Spacer()
                     Button(action: {
-                        if poem.isSaved == false {
-                            favourites.add(poem)
-                        }
+                            favourites.process(poem)
                     }, label: {
-                        Image(systemName: "heart")
-                            .foregroundStyle(Color(.label))
-                            .imageScale(.large)
-                            .frame(width: 44, height: 44)
+                        if favourites.items.contains(poem) {
+                            IconToFavourite(imageName: "heart.fill")
+                                .foregroundStyle(.lightRasbery)
+                        } else {
+                            IconToFavourite(imageName: "heart")
+                        }
                     }).padding()
                 }
                 HStack {
@@ -48,22 +48,27 @@ struct PoemDetailedView: View {
                 
                 HStack {
                     
-                    Button(action: {
-                        
-                    }, label: {
-                        Image(systemName: "play.circle")
-                            .resizable()
-                            .frame(width:44, height: 44)
-                            .padding(.trailing, 50)
-                    })
+                    AudioPlayerView(audioFileName: poem.audioFileName)
+                        .padding(.trailing, 40)
                     // Forced unwrapping is only for development purpose, will not be in the final version
-                    Link("Watch the video", destination: URL(string:poem.videoLink)!)
+                    Link("Watch the video", destination: URL(string:poem.videoLink) ?? URL(fileURLWithPath: ""))
                 }
-                Spacer()
+                
             }
+            Spacer()
         }
+        .background(BackgroundView())
     }
 }
 #Preview {
     PoemDetailedView(poem: MockData.samplePoem)
+}
+
+struct IconToFavourite: View {
+    var imageName: String
+    var body: some View {
+        Image(systemName: imageName)
+            .imageScale(.large)
+            .frame(width: 44, height: 44)
+    }
 }

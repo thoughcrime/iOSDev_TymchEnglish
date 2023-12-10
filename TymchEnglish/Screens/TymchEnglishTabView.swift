@@ -10,6 +10,7 @@ import SwiftUI
 struct TymchEnglishTabView: View {
     
     @State private var showingPopover = true
+    @EnvironmentObject var favourites: Favourites
     
     var body: some View {
         TabView {
@@ -21,7 +22,7 @@ struct TymchEnglishTabView: View {
             FavouritePoemListView()
                 .tabItem {
                     Label("Liked", systemImage: "heart")
-                }
+                }.badge(favourites.items.count)
             
             InformationView()
                 .tabItem {

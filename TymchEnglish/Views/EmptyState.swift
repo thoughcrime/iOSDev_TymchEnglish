@@ -10,7 +10,6 @@ import SwiftUI
 struct EmptyState: View {
     var body: some View {
         ZStack {
-            
             VStack {
                 Image(systemName: "book.pages")
                     .resizable()

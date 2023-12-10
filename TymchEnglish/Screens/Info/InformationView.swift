@@ -12,17 +12,30 @@ struct InformationView: View {
         
         ZStack {
             BackgroundView()
-            
             VStack {
+                LogoView(logoRadius: 70)
                 Text ("Stay Connected")
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                Spacer()
+                Text ("Hi! We're a team of passionate English teachers known as **Tymch English**. We've crafted this app as a handy tool to simplify a teacher's life, offering a curated collection of poems and chants readily available. Stay connected with us on social media:")
+                    .font(.title2)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 10)
+                InstagramLink()
+                Text (try! AttributedString(markdown: "Or feel free to reach out with any suggestions you might have at:\n tymchenglish@gmail.com"))
+                    .font(.title2)
+                    .multilineTextAlignment(.center)
+                    .padding()
                 
-                HStack {
-                    Image(systemName: "globe")
-                    Link("Tymch English", destination: URL(string: "https://www.instagram.com/tymch_english/")!)
-                }
-                    
+            Text ("We'd love to hear from you!")
+                    .font(.title2)
+                    .multilineTextAlignment(.center)
+                    .padding()
+
+
+                    Spacer()
+                    Spacer()
             }
         }
     }
@@ -30,4 +43,18 @@ struct InformationView: View {
 
 #Preview {
     InformationView()
+}
+
+struct InstagramLink: View {
+    var body: some View {
+        HStack {
+            Image(systemName: "globe")
+                .resizable()
+                .scaledToFit()
+                .frame(height: 30)
+            Link("Tymch English", destination: URL(string: "https://www.instagram.com/tymch_english/")!)
+                .font(.title2)
+            
+        }
+    }
 }
