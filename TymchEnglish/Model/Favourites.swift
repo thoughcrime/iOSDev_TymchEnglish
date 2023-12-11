@@ -10,7 +10,7 @@ import SwiftUI
 final class Favourites: ObservableObject {
 //Set allows to iterate faster
 //    @Published var items: Set<Poem> = []
-    @Published var items: [Poem] = []
+    @AppStorage("favourites") var items: [Poem] = []
     
         func process(_ poem: Poem) {
         //func for list

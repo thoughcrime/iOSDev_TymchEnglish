@@ -13,6 +13,7 @@
 		74145E542B26005D004EF9B2 /* ResourceNotFound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74145E532B26005D004EF9B2 /* ResourceNotFound.swift */; };
 		74432D9A2B084EC70003790E /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74432D992B084EC70003790E /* AppButton.swift */; };
 		7446BDBD2B2177E5009C6EEA /* soundPlaceholder2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7446BDBC2B2177E5009C6EEA /* soundPlaceholder2.mp3 */; };
+		744962022B268D02004B1F2D /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744962012B268D02004B1F2D /* Extentions.swift */; };
 		74600C2F2AD4A8D400AAB760 /* TymchEnglishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74600C2E2AD4A8D400AAB760 /* TymchEnglishApp.swift */; };
 		74600C362AD4A8D600AAB760 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74600C352AD4A8D600AAB760 /* Preview Assets.xcassets */; };
 		74600C402AD4A8D600AAB760 /* TymchEnglishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74600C3F2AD4A8D600AAB760 /* TymchEnglishTests.swift */; };
@@ -61,6 +62,7 @@
 		74145E532B26005D004EF9B2 /* ResourceNotFound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceNotFound.swift; sourceTree = "<group>"; };
 		74432D992B084EC70003790E /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
 		7446BDBC2B2177E5009C6EEA /* soundPlaceholder2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundPlaceholder2.mp3; sourceTree = "<group>"; };
+		744962012B268D02004B1F2D /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		74600C2B2AD4A8D400AAB760 /* TymchEnglish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TymchEnglish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74600C2E2AD4A8D400AAB760 /* TymchEnglishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TymchEnglishApp.swift; sourceTree = "<group>"; };
 		74600C352AD4A8D600AAB760 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -117,9 +119,9 @@
 		7415ABE62B1446DF001B4BE4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				744962002B268CD4004B1F2D /* Extensions */,
+				744961FF2B268CBC004B1F2D /* Buttons */,
 				749DB0392B1D9D650050EFD9 /* Allert */,
-				74432D992B084EC70003790E /* AppButton.swift */,
-				74E351CC2B0AF02F005E76F5 /* BackgroundView.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -127,6 +129,7 @@
 		7415ABE72B1446ED001B4BE4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				744961FE2B268C15004B1F2D /* Background */,
 				749DB0372B1D80790050EFD9 /* EmptyState.swift */,
 				74145E532B26005D004EF9B2 /* ResourceNotFound.swift */,
 				7415ABED2B144A66001B4BE4 /* Cells */,
@@ -208,6 +211,30 @@
 				74CEF4E82B215FF700E8483E /* soundPlaceholder.mp3 */,
 			);
 			path = SoundRecords;
+			sourceTree = "<group>";
+		};
+		744961FE2B268C15004B1F2D /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				74E351CC2B0AF02F005E76F5 /* BackgroundView.swift */,
+			);
+			path = Background;
+			sourceTree = "<group>";
+		};
+		744961FF2B268CBC004B1F2D /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				74432D992B084EC70003790E /* AppButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		744962002B268CD4004B1F2D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				744962012B268D02004B1F2D /* Extentions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		74600C222AD4A8D400AAB760 = {
@@ -434,6 +461,7 @@
 				74B8028E2B09A85700106B17 /* PoemsCategoriesListView.swift in Sources */,
 				74432D9A2B084EC70003790E /* AppButton.swift in Sources */,
 				747FE7742B1F6249000C4D18 /* AudioPlayerViewModel.swift in Sources */,
+				744962022B268D02004B1F2D /* Extentions.swift in Sources */,
 				74B802822B09575700106B17 /* StartScreenView.swift in Sources */,
 				747FE7772B1F62FB000C4D18 /* AudioPlayerView.swift in Sources */,
 				74E351CD2B0AF02F005E76F5 /* BackgroundView.swift in Sources */,

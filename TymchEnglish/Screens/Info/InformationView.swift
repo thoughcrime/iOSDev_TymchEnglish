@@ -32,8 +32,6 @@ struct InformationView: View {
                     .font(.title2)
                     .multilineTextAlignment(.center)
                     .padding()
-
-
                     Spacer()
                     Spacer()
             }
