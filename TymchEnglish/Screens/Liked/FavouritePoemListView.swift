@@ -28,7 +28,6 @@ struct FavouritePoemListView: View {
                                 .swipeActions(edge:.leading) {
                                     AudioPlayerView(audioFileName: poem.audioFileName)
                                 }
-                                .swipe
                         }
                     }
                     // deletes added poem (from a list) on the left swipe
