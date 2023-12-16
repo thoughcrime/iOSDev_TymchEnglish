@@ -12,13 +12,11 @@
 		74029B062B0A6D4D007A6FBF /* FavouritePoemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74029B052B0A6D4D007A6FBF /* FavouritePoemListView.swift */; };
 		74145E542B26005D004EF9B2 /* ResourceNotFound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74145E532B26005D004EF9B2 /* ResourceNotFound.swift */; };
 		74432D9A2B084EC70003790E /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74432D992B084EC70003790E /* AppButton.swift */; };
-		7446BDBD2B2177E5009C6EEA /* soundPlaceholder2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7446BDBC2B2177E5009C6EEA /* soundPlaceholder2.mp3 */; };
+		7446BDBD2B2177E5009C6EEA /* soundPlaceholder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7446BDBC2B2177E5009C6EEA /* soundPlaceholder.mp3 */; };
 		744962022B268D02004B1F2D /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744962012B268D02004B1F2D /* Extentions.swift */; };
+		744962082B26BEC7004B1F2D /* WebLinkWithSystemImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744962072B26BEC7004B1F2D /* WebLinkWithSystemImage.swift */; };
 		74600C2F2AD4A8D400AAB760 /* TymchEnglishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74600C2E2AD4A8D400AAB760 /* TymchEnglishApp.swift */; };
 		74600C362AD4A8D600AAB760 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74600C352AD4A8D600AAB760 /* Preview Assets.xcassets */; };
-		74600C402AD4A8D600AAB760 /* TymchEnglishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74600C3F2AD4A8D600AAB760 /* TymchEnglishTests.swift */; };
-		74600C4A2AD4A8D600AAB760 /* TymchEnglishUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74600C492AD4A8D600AAB760 /* TymchEnglishUITests.swift */; };
-		74600C4C2AD4A8D600AAB760 /* TymchEnglishUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74600C4B2AD4A8D600AAB760 /* TymchEnglishUITestsLaunchTests.swift */; };
 		747FE7742B1F6249000C4D18 /* AudioPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747FE7732B1F6249000C4D18 /* AudioPlayerViewModel.swift */; };
 		747FE7772B1F62FB000C4D18 /* AudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747FE7762B1F62FB000C4D18 /* AudioPlayerView.swift */; };
 		7496F40D2B201B8A00DCAA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7496F40C2B201B8A00DCAA49 /* Assets.xcassets */; };
@@ -30,7 +28,7 @@
 		74B8028E2B09A85700106B17 /* PoemsCategoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8028D2B09A85700106B17 /* PoemsCategoriesListView.swift */; };
 		74C34D872B1AC9B900C46818 /* FavouritePoemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C34D862B1AC9B900C46818 /* FavouritePoemsViewModel.swift */; };
 		74C34D892B1ACB0A00C46818 /* Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C34D882B1ACB0A00C46818 /* Favourites.swift */; };
-		74CEF4E92B215FF700E8483E /* soundPlaceholder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 74CEF4E82B215FF700E8483E /* soundPlaceholder.mp3 */; };
+		74CEF4E92B215FF700E8483E /* soundPlaceholder2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 74CEF4E82B215FF700E8483E /* soundPlaceholder2.mp3 */; };
 		74E351C92B0ACBF5005E76F5 /* Poems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E351C82B0ACBF5005E76F5 /* Poems.swift */; };
 		74E351CD2B0AF02F005E76F5 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E351CC2B0AF02F005E76F5 /* BackgroundView.swift */; };
 		74E351D02B0AF64A005E76F5 /* PoemCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E351CF2B0AF64A005E76F5 /* PoemCellView.swift */; };
@@ -61,16 +59,14 @@
 		74029B052B0A6D4D007A6FBF /* FavouritePoemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritePoemListView.swift; sourceTree = "<group>"; };
 		74145E532B26005D004EF9B2 /* ResourceNotFound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceNotFound.swift; sourceTree = "<group>"; };
 		74432D992B084EC70003790E /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
-		7446BDBC2B2177E5009C6EEA /* soundPlaceholder2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundPlaceholder2.mp3; sourceTree = "<group>"; };
+		7446BDBC2B2177E5009C6EEA /* soundPlaceholder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundPlaceholder.mp3; sourceTree = "<group>"; };
 		744962012B268D02004B1F2D /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		744962072B26BEC7004B1F2D /* WebLinkWithSystemImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebLinkWithSystemImage.swift; sourceTree = "<group>"; };
 		74600C2B2AD4A8D400AAB760 /* TymchEnglish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TymchEnglish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74600C2E2AD4A8D400AAB760 /* TymchEnglishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TymchEnglishApp.swift; sourceTree = "<group>"; };
 		74600C352AD4A8D600AAB760 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		74600C3B2AD4A8D600AAB760 /* TymchEnglishTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TymchEnglishTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		74600C3F2AD4A8D600AAB760 /* TymchEnglishTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TymchEnglishTests.swift; sourceTree = "<group>"; };
 		74600C452AD4A8D600AAB760 /* TymchEnglishUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TymchEnglishUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		74600C492AD4A8D600AAB760 /* TymchEnglishUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TymchEnglishUITests.swift; sourceTree = "<group>"; };
-		74600C4B2AD4A8D600AAB760 /* TymchEnglishUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TymchEnglishUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7460AE982B16810C001BD387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		747FE7732B1F6249000C4D18 /* AudioPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewModel.swift; sourceTree = "<group>"; };
 		747FE7762B1F62FB000C4D18 /* AudioPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerView.swift; sourceTree = "<group>"; };
@@ -83,7 +79,7 @@
 		74B8028D2B09A85700106B17 /* PoemsCategoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemsCategoriesListView.swift; sourceTree = "<group>"; };
 		74C34D862B1AC9B900C46818 /* FavouritePoemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritePoemsViewModel.swift; sourceTree = "<group>"; };
 		74C34D882B1ACB0A00C46818 /* Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourites.swift; sourceTree = "<group>"; };
-		74CEF4E82B215FF700E8483E /* soundPlaceholder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundPlaceholder.mp3; sourceTree = "<group>"; };
+		74CEF4E82B215FF700E8483E /* soundPlaceholder2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundPlaceholder2.mp3; sourceTree = "<group>"; };
 		74E351C82B0ACBF5005E76F5 /* Poems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poems.swift; sourceTree = "<group>"; };
 		74E351CC2B0AF02F005E76F5 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		74E351CF2B0AF64A005E76F5 /* PoemCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemCellView.swift; sourceTree = "<group>"; };
@@ -129,6 +125,8 @@
 		7415ABE72B1446ED001B4BE4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				74B8028B2B09986300106B17 /* PoemDetailedView.swift */,
+				744962092B26C88E004B1F2D /* Links */,
 				744961FE2B268C15004B1F2D /* Background */,
 				749DB0372B1D80790050EFD9 /* EmptyState.swift */,
 				74145E532B26005D004EF9B2 /* ResourceNotFound.swift */,
@@ -198,7 +196,6 @@
 			isa = PBXGroup;
 			children = (
 				74B802872B09952900106B17 /* PoemsListView.swift */,
-				74B8028B2B09986300106B17 /* PoemDetailedView.swift */,
 				747FE7752B1F62D9000C4D18 /* AudioPlayer */,
 			);
 			path = Poems;
@@ -207,8 +204,8 @@
 		7415D9112B2405FC0085F300 /* SoundRecords */ = {
 			isa = PBXGroup;
 			children = (
-				7446BDBC2B2177E5009C6EEA /* soundPlaceholder2.mp3 */,
-				74CEF4E82B215FF700E8483E /* soundPlaceholder.mp3 */,
+				7446BDBC2B2177E5009C6EEA /* soundPlaceholder.mp3 */,
+				74CEF4E82B215FF700E8483E /* soundPlaceholder2.mp3 */,
 			);
 			path = SoundRecords;
 			sourceTree = "<group>";
@@ -237,12 +234,18 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		744962092B26C88E004B1F2D /* Links */ = {
+			isa = PBXGroup;
+			children = (
+				744962072B26BEC7004B1F2D /* WebLinkWithSystemImage.swift */,
+			);
+			path = Links;
+			sourceTree = "<group>";
+		};
 		74600C222AD4A8D400AAB760 = {
 			isa = PBXGroup;
 			children = (
 				74600C2D2AD4A8D400AAB760 /* TymchEnglish */,
-				74600C3E2AD4A8D600AAB760 /* TymchEnglishTests */,
-				74600C482AD4A8D600AAB760 /* TymchEnglishUITests */,
 				74600C2C2AD4A8D400AAB760 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -279,23 +282,6 @@
 				74600C352AD4A8D600AAB760 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		74600C3E2AD4A8D600AAB760 /* TymchEnglishTests */ = {
-			isa = PBXGroup;
-			children = (
-				74600C3F2AD4A8D600AAB760 /* TymchEnglishTests.swift */,
-			);
-			path = TymchEnglishTests;
-			sourceTree = "<group>";
-		};
-		74600C482AD4A8D600AAB760 /* TymchEnglishUITests */ = {
-			isa = PBXGroup;
-			children = (
-				74600C492AD4A8D600AAB760 /* TymchEnglishUITests.swift */,
-				74600C4B2AD4A8D600AAB760 /* TymchEnglishUITestsLaunchTests.swift */,
-			);
-			path = TymchEnglishUITests;
 			sourceTree = "<group>";
 		};
 		747FE7752B1F62D9000C4D18 /* AudioPlayer */ = {
@@ -420,9 +406,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7496F40D2B201B8A00DCAA49 /* Assets.xcassets in Resources */,
-				7446BDBD2B2177E5009C6EEA /* soundPlaceholder2.mp3 in Resources */,
+				7446BDBD2B2177E5009C6EEA /* soundPlaceholder.mp3 in Resources */,
 				74600C362AD4A8D600AAB760 /* Preview Assets.xcassets in Resources */,
-				74CEF4E92B215FF700E8483E /* soundPlaceholder.mp3 in Resources */,
+				74CEF4E92B215FF700E8483E /* soundPlaceholder2.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +437,7 @@
 				74145E542B26005D004EF9B2 /* ResourceNotFound.swift in Sources */,
 				74B8028C2B09986300106B17 /* PoemDetailedView.swift in Sources */,
 				74E351D22B0AF6F1005E76F5 /* Categories.swift in Sources */,
+				744962082B26BEC7004B1F2D /* WebLinkWithSystemImage.swift in Sources */,
 				749DB03B2B1D9DB70050EFD9 /* Allert.swift in Sources */,
 				749DB0382B1D80790050EFD9 /* EmptyState.swift in Sources */,
 				74C34D892B1ACB0A00C46818 /* Favourites.swift in Sources */,
@@ -476,7 +463,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74600C402AD4A8D600AAB760 /* TymchEnglishTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,8 +470,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74600C4A2AD4A8D600AAB760 /* TymchEnglishUITests.swift in Sources */,
-				74600C4C2AD4A8D600AAB760 /* TymchEnglishUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

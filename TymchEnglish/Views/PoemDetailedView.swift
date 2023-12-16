@@ -49,7 +49,6 @@ struct PoemDetailedView: View {
                 HStack {
                     AudioPlayerView(audioFileName: poem.audioFileName)
                         .padding(.trailing, 40)
-                    // Forced unwrapping is only for development purpose, will not be in the final version
                     Link("Watch the video", destination: URL(string:poem.videoLink) ?? URL(fileURLWithPath: ""))
                 }
             }

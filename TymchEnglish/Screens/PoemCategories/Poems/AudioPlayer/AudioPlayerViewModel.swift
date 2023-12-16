@@ -6,6 +6,7 @@
 //
 
 import AVFoundation
+import SwiftUI
 
 class AudioPlayerViewModel: ObservableObject {
     
@@ -13,20 +14,24 @@ class AudioPlayerViewModel: ObservableObject {
     @Published var isPlaying = false
     @Published var alertItem: AlertItem?
     @Published var audiofileInitialized: Bool?
+//    private var audioFileName: String
     
+//    init(audioFileName: String) {
+//        self.audioFileName = audioFileName
+//    }
     
-    
-    //    init() {
-    //        if let sound = Bundle.main.path(forResource: audioFileName, ofType: nil) {
-    //            do {
-    //                self.audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound))
-    //            } catch {
-    //                alertItem = AlertContext.audioNotAvailable
-    //            }
-    //        } else {
-    //            print("Audio file is not available")
-    //        }
-    //    }
+//        init(audioFileName: String = "") {
+//            if let sound = Bundle.main.path(forResource: audioFileName, ofType: nil) {
+//                do {
+//                    self.audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound))
+//                    audiofileInitialized = true
+//                } catch {
+//                    alertItem = AlertContext.audioNotAvailable
+//                }
+//            } else {
+//                audiofileInitialized = false
+//            }
+//        }
     
     func initilizeAudioPlayer(audioFileName: String) {
         guard audiofileInitialized == nil else {return}
@@ -45,10 +50,11 @@ class AudioPlayerViewModel: ObservableObject {
     
     func playOrStop() {
         guard let player = audioPlayer else { return }
-        
-        if player.isPlaying {
+//        print(isPlaying)
+        if isPlaying {
             player.stop()
             isPlaying = false
+
         } else {
             player.currentTime = 0.0
             player.play()
@@ -56,3 +62,11 @@ class AudioPlayerViewModel: ObservableObject {
         }
     }
 }
+
+struct IsPlaying {
+    
+    @State var isPlaying: Bool = false
+    
+}
+
+var status = IsPlaying()

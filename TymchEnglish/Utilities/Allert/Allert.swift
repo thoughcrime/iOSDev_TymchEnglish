@@ -22,7 +22,7 @@ struct AlertContext {
                                             dismissButton: .default(Text("OK")))
     
     static let audioNotAvailable      = AlertItem(title: Text("Audio Not Available"),
-                                            message: Text("The audio file you are trying to access is not available."),
+                                            message: Text("The audio file for the poem you are trying to access is not available."),
                                             dismissButton: .default(Text("OK")))
     
 }

@@ -7,11 +7,14 @@
 
 import SwiftUI
 
-//final class FavouritePoemsViewModel: ObservableObject {
-//    
-//    @AppStorage("favourites") var favourites = Favourites().items
-//    
-//}
-
+final class FavouritePoemsViewModel: ObservableObject {
+    
+//    @Published var audioIsPlaying: Bool = true
+    
+//    func playPoem (_ poem: Poem) -> some View {
+//        return AudioPlayerView(audioFileName: poem.audioFileName, isPlaying: <#Bool#>)
+//    }
+    
+}
     
     

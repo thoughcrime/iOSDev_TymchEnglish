@@ -7,7 +7,8 @@
 
 import Foundation
 
-typealias FavouritePoems = [Poem]
+//typealias FavouritePoems = [Poem]
+typealias FavouritePoems = Set<Poem>
 
 extension FavouritePoems: RawRepresentable {
     public init?(rawValue: String) {

@@ -22,7 +22,7 @@ struct InformationView: View {
                     .font(.title2)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 10)
-                InstagramLink()
+                WebLinkWithSystemImage(systemImage: "globe", linkText: "Tymch English", urlString: "https://www.instagram.com/tymch_english/")
                 Text (try! AttributedString(markdown: "Or feel free to reach out with any suggestions you might have at:\n tymchenglish@gmail.com"))
                     .font(.title2)
                     .multilineTextAlignment(.center)
@@ -43,16 +43,4 @@ struct InformationView: View {
     InformationView()
 }
 
-struct InstagramLink: View {
-    var body: some View {
-        HStack {
-            Image(systemName: "globe")
-                .resizable()
-                .scaledToFit()
-                .frame(height: 30)
-            Link("Tymch English", destination: URL(string: "https://www.instagram.com/tymch_english/")!)
-                .font(.title2)
-            
-        }
-    }
-}
+

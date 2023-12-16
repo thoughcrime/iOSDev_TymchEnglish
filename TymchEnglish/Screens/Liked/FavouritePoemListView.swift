@@ -9,43 +9,56 @@ import SwiftUI
 
 struct FavouritePoemListView: View {
     // for test purposes, as the environmental object crashes the preview
-//    @State private var favourites = MockData.setOfSamplePoems
+    //    @State private var favourites = MockData.self
     // After refactoring for MVVM
-//    @StateObject var viewModel = FavouritePoemsViewModel()
+    //    @StateObject var viewModel = FavouritePoemsViewModel()
     @EnvironmentObject var favourites: Favourites
+    @State var somethingIsPlaying: Bool = false
     
     var body: some View {
         NavigationStack{
             ZStack {
                 List {
-                    ForEach(favourites.items) { poem in
+                    // When favourites.items == list
+                    //                    ForEach(favourites.items) { poem in
+                    // When favourites.items == set
+                    ForEach(Array(favourites.items)) { poem in
                         NavigationLink {
                             // Navigates to detailed view of the poem
                             PoemDetailedView(poem: poem)
                         } label: {
-                            PoemCellView(title: poem.title, imageName: poem.imageName)
+                            PoemCellView(title: poem.title, imageName: poem.imageName, isPlaying: somethingIsPlaying)
                             // plays audio on right swipe
                                 .swipeActions(edge:.leading) {
-                                    AudioPlayerView(audioFileName: poem.audioFileName)
+                                    AudioPlayerView(audioFileName: poem.audioFileName, isPlaying: $somethingIsPlaying.wrappedValue)
+                                    .onChange(of: somethingIsPlaying) { state in
+                                    print ("This is favourites state\(somethingIsPlaying)")
+                                                                            }
                                 }
                         }
+                        .swipeActions {
+                            Button(role: .destructive) {
+                                favourites.process(poem)
+                            } label: {
+                                Label("Delete", systemImage: "trash")
+                                    .tint(.red)
+                            }
+                        }
                     }
-                    // deletes added poem (from a list) on the left swipe
-                    .onDelete(perform: { indexSet in
-                        favourites.items.remove(atOffsets: indexSet)
-                    })
                 }
-                .navigationTitle("Favourite poems")
-                .navigationBarTitleDisplayMode(.inline)
-                .scrollContentBackground(.hidden)
-                .background(BackgroundView())
                 if favourites.items.isEmpty {
                     EmptyState()
                 }
             }
+            .navigationTitle("Favourite poems")
+            .navigationBarTitleDisplayMode(.inline)
+            .scrollContentBackground(.hidden)
+            .background(BackgroundView())
+            
         }
     }
 }
+
 #Preview {
     FavouritePoemListView()
 }

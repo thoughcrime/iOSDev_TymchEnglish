@@ -11,25 +11,53 @@ struct PoemCellView: View {
     
     var title: String
     var imageName: String
+    @State var isPlaying: Bool
     
     var body: some View {
+        
         HStack {
             Image(imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 80, height: 80)
                 .cornerRadius(22)
-            Text (title)
-                .font(.headline)
-                .foregroundStyle(.lightRasbery)
-                .scaledToFit()
-                .minimumScaleFactor(0.6)
+            ZStack(alignment: .leading) {
+                Text (title)
+                    .font(.headline)
+                    .foregroundStyle(.lightRasbery)
+                    .scaledToFit()
+                    .minimumScaleFactor(0.6)
+                if isPlaying {
+                    PlayingAnimation()
+                }
+            }
         }
-        
     }
 }
 
 
 #Preview {
-    PoemCellView(title: MockData.samplePoem.title, imageName: MockData.samplePoem.imageName)
+    PoemCellView(title: MockData.samplePoem.title, imageName: MockData.samplePoem.imageName, isPlaying: true)
+}
+
+
+
+struct PlayingAnimation: View {
+    var body: some View {
+        VStack (alignment: .trailing){
+            HStack {
+                Image(systemName: "play.circle")
+                    .resizable()
+                    .scaledToFit()
+                    .padding(2)
+                    .foregroundStyle(.secondary)
+                Text ("Is playing")
+                    .foregroundStyle(.secondary)
+            }
+            .frame(width: 120, height: 25)
+            .background(.hummingBird)
+            .clipShape(.capsule)
+            Spacer()
+        }
+    }
 }
