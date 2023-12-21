@@ -8,9 +8,6 @@
 import SwiftUI
 
 struct PoemDetailedView: View {
-    
-    @EnvironmentObject var favourites: Favourites
-    
     var poem: Poem
     
     var body: some View {
@@ -19,9 +16,9 @@ struct PoemDetailedView: View {
                 HStack {
                     Spacer()
                     Button(action: {
-                            favourites.process(poem)
+						FavouritesHelper().processToFavouritePoems(poemToSave: poem)
                     }, label: {
-                        if favourites.items.contains(poem) {
+						if FavouritesHelper().checkIfIsAlreadyFavourite(poemToSave: poem) {
                             IconToFavourite(imageName: "heart.fill")
                                 .foregroundStyle(.lightRasbery)
                         } else {

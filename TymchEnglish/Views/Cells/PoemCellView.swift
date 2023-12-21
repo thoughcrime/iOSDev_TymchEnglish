@@ -27,7 +27,7 @@ struct PoemCellView: View {
                     .foregroundStyle(.lightRasbery)
                     .scaledToFit()
                     .minimumScaleFactor(0.6)
-                if isPlaying {
+                if true {
                     PlayingAnimation()
                 }
             }
