@@ -29,6 +29,10 @@ struct PoemCategory: Hashable, Identifiable, Codable {
         case seasons
     }
     
+    enum subCategories: Codable {
+        case counting
+    }
+    
 }
 
 struct PoemCategories: Hashable {
@@ -46,7 +50,7 @@ struct PoemCategories: Hashable {
         PoemCategory(category: .lullabye, title: "Lullabyes", categoryImage: "imagePlaceholder"),
         PoemCategory(category: .parachute, title: "Parachute and scarf songs and rhymes", categoryImage: "imagePlaceholder"),
         PoemCategory(category: .transportation, title: "Poems and songs about transportation", categoryImage: "imagePlaceholder"),
-        PoemCategory(category: .seasons, title: "Poems and songs about seasongs", categoryImage: "imagePlaceholder")
+        PoemCategory(category: .seasons, title: "Poems and songs about seasongs and weather", categoryImage: "imagePlaceholder")
     ]
 }
 
