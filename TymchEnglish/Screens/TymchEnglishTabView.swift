@@ -19,7 +19,7 @@ struct TymchEnglishTabView: View {
                     Label("Poems", systemImage: "book.closed")
                 }
                 
-            FavouritePoemListView()
+            LikedPoemListView()
                 .tabItem {
                     Label("Liked", systemImage: "heart")
                 }.badge(favourites.items.count)

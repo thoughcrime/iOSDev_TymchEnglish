@@ -1,5 +1,5 @@
 //
-//  FavouritePoemsViewModel.swift
+//  LikedPoemsViewModel.swift
 //  TymchEnglish
 //
 //  Created by Irene Tymchenko on 01.12.2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-final class FavouritePoemsViewModel: ObservableObject {
+final class LikedPoemsViewModel: ObservableObject {
     
 //    @Published var audioIsPlaying: Bool = true
     

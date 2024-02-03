@@ -23,25 +23,26 @@ struct HelperFavourites {
 
 final class Favourites: ObservableObject {
 //Set allows to iterate faster
-    @AppStorage("favourites") var items: Set<Poem> = []
-//    @AppStorage("favourites") var items: [Poem] = []
-    
-//        func process(_ poem: Poem) {
-//        //func for list
-//            guard !items.contains(poem) else {
-//                items.removeAll(where: {$0 == poem})
-//                return
-//            }
-//            items.append(poem)
+//    @AppStorage("favourites") var items: Set<Poem> = []
+    @AppStorage("favourites") var items: [Poem] = []
     
     func process(_ poem: Poem) {
-    //func for set
+        //func for list
         guard !items.contains(poem) else {
-            items.remove(poem)
+            items.removeAll(where: {$0 == poem})
             return
         }
-        items.insert(poem)
-        }
+        items.append(poem)
+    }
+    
+//    func process(_ poem: Poem) {
+//    //func for set
+//        guard !items.contains(poem) else {
+//            items.remove(poem)
+//            return
+//        }
+//        items.insert(poem)
+//        }
    
 }
 

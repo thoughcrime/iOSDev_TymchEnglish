@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct FavouritePoemListView: View {
+struct LikedPoemListView: View {
     // for test purposes, as the environmental object crashes the preview
     //    @State private var favourites = MockData.self
     // After refactoring for MVVM
-    //    @StateObject var viewModel = FavouritePoemsViewModel()
+    //    @StateObject var viewModel = LikedPoemsViewModel()
     @EnvironmentObject var favourites: Favourites
     @State var somethingIsPlaying: Bool = false
     
@@ -60,5 +60,5 @@ struct FavouritePoemListView: View {
 }
 
 #Preview {
-    FavouritePoemListView()
+    LikedPoemListView()
 }

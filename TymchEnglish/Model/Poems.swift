@@ -196,6 +196,94 @@ struct Poems: Hashable {
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
             lyrics:"Open and shut them, open and shut them,\nGive a little clap, clap, clap.\nOpen and shut them, open and shut them,\nPut them in your lap, lap, lap.\n\nCreep them, creep them, creep them, creep them\nRight up to your chin, chin, chin.\nOpen up your little mouth,\nBut do not let them in!\n\nOh We Clap, Clap, Clap\nOh we clap, clap, clap\nOh we clap our hands together\nOh we clap, clap, clap\nOh we clap and then we\nStop!\n\nOh we tap, tap, tap\nOh we tap our knees together\nOh we tap, tap, tap\nOh we tap and then we\nStop!\n\nOh we blow a kiss\nOh we blow a kiss together\nOh we blow a kiss \nOh we blow a kiss and\nStop!"),
+        Poem (
+            id: 0026,
+            title: "Hickory Dickory Dock",
+            category: .animals,
+            imageName: "imagePlaceholder",
+            audioFileName: "soundPlaceholder.mp3",
+            videoLink: "https://youtu.be/dQw4w9WgXcQ",
+            lyrics:"Hickory dickory dock\nThe mouse ran up the clock.\nThe clock struck one\nThe mouse ran down\nHickory dickory dock.\n\nHickory dickory dock\nThe mouse ran up the clock.\nThe clock struck two\nAnd down he flew\nHickory dickory dock."),
+        
+        Poem (
+            id: 0027,
+            title: "Hey Diddle Diddle",
+            category: .animals,
+            imageName: "imagePlaceholder",
+            audioFileName: "soundPlaceholder.mp3",
+            videoLink: "https://youtu.be/dQw4w9WgXcQ",
+            lyrics:"Hey diddle diddle the cat and the fiddle\nThe cow jumped over the moon\nThe little dog laughed to see such fun\nAnd the dish ran away with the spoon!\n\nHey diddle diddle the cat and the fiddle\nThe cow jumped over the moon\nThe little dog laughed to see such fun\nAnd the dish ran away with the spoon!"),
+        
+        Poem (
+            id: 0028,
+            title: "Hot Cross Buns",
+            category: .actions,
+            imageName: "imagePlaceholder",
+            audioFileName: "soundPlaceholder.mp3",
+            videoLink: "https://youtu.be/dQw4w9WgXcQ",
+            lyrics:"Hot cross buns!\nHot cross buns!\nOne a penny two a penny.\nHot cross buns!\nIf you have no daughters\nGive them to your sons!\nOne a penny two a penny.\nHot cross buns!"),
+        
+        Poem (
+            id: 0029,
+            title: "Jack & Jill",
+            category: .actions,
+            imageName: "imagePlaceholder",
+            audioFileName: "soundPlaceholder.mp3",
+            videoLink: "https://youtu.be/dQw4w9WgXcQ",
+            lyrics:"Jack and Jill went up the hill\nTo fetch a pail of water;\nJack fell down and broke his crown\nAnd Jill came tumbling after."),
+        
+        Poem (
+            id: 0030,
+            title: "Muffin Man",
+            category: .actions,
+            imageName: "imagePlaceholder",
+            audioFileName: "soundPlaceholder.mp3",
+            videoLink: "https://youtu.be/dQw4w9WgXcQ",
+            lyrics:"Oh do you know the muffin man\nThe muffin man the muffin man?\nOh do you know the muffin man\nWho lives on Dury lane?\nOh yes we know the muffin man\nThe muffin man the muffin man.\nOh yes we know the muffin man\nWho lives on Dury lane."),
+        
+        Poem(id: 0031,
+             title: "Rain",
+             category: .seasons,
+             imageName: "imagePlaceholder",
+             audioFileName: "soundPlaceholder.mp3",
+             videoLink: "https://youtu.be/dQw4w9WgXcQ",
+             lyrics: "The rian is falling all around,\nIt falls on field and tree,\nIt rains on the umbrellas here,\nAnd on the ship at sea.\n\n\t\tRobert Louis Stevenson"),
+        
+        Poem (
+            id: 0032,
+            title: "Twinkle, Twinkle, Little Star",
+            category: .lullabye,
+            imageName: "imagePlaceholder",
+            audioFileName: "soundPlaceholder.mp3",
+            videoLink: "https://youtu.be/dQw4w9WgXcQ",
+            lyrics:"Twinkle, twinkle, little star,\nHow I wonder what you are,\nUp above the world so high,\nLike a dimond in the sky."),
+        
+        Poem (
+            id: 0033,
+            title: "Come, let's to Bed",
+            category: .lullabye,
+            imageName: "imagePlaceholder",
+            audioFileName: "soundPlaceholder.mp3",
+            videoLink: "https://youtu.be/dQw4w9WgXcQ",
+            lyrics:"Come,let's to bed, says Sleepy-head;\nSit up awhile, says Slow;\nBang on the pot, says Greedy-gut,\nWe'll sup before we go.\n\nTo bed, to bed, cried Sleepy-head,\nBut all the rest said No!\nIt is morning now,\nYuo must milk the cow,\nAnd tomorrow to bed we go."),
+        
+        Poem (
+            id: 0034,
+            title: "Hush, Little Baby",
+            category: .lullabye,
+            imageName: "imagePlaceholder",
+            audioFileName: "soundPlaceholder.mp3",
+            videoLink: "https://youtu.be/dQw4w9WgXcQ",
+            lyrics:"Hush, little baby, don't say a word,\nPapa's going to buy you a mocking bird.\n\nIf the mocking bird won't sing,\nPapa's going to buy you a diamond ring.\n\nIf the diamond ring turns to bras,\nPapa's going to buy you a looking-glass.\n\nIf the looking-glass gets broke,\nPapa's going to buy you a billy-goat.\n\nIf that billy-goat runs away,\nPapa's going to buy you another today."),
+        
+        Poem (
+            id: 0035,
+            title: "Sleep, Baby, Sleep",
+            category: .lullabye,
+            imageName: "imagePlaceholder",
+            audioFileName: "soundPlaceholder.mp3",
+            videoLink: "https://youtu.be/dQw4w9WgXcQ",
+            lyrics:"Sleep, baby, sleep,\nThy father guards the sheep;\nThy mother shakes the dreamland three\nAnd from it fall sweet dreams for thee,\nSleep,baby,sleep.\n\nSleep, baby, sleep,\nOur cottage vale is deep;\n"),
         
     ]
 }
