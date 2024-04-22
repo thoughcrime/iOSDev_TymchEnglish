@@ -71,8 +71,8 @@ class AudioPlayerManager: NSObject, ObservableObject, AVAudioPlayerDelegate {
     // MARK: - AVAudioPlayerDelegate Methods
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         if flag {
-            DispatchQueue.main.async {
-                self.currentlyPlaying = nil
+            DispatchQueue.main.async { [weak self] in
+                self?.currentlyPlaying = nil
             }
         }
     }

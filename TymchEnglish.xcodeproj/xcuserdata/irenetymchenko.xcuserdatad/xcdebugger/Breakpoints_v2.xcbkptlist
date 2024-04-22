@@ -20,5 +20,158 @@
             landmarkType = "37">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1DC00F62-DDA4-4C91-8050-02E18E21591D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TymchEnglish/Utilities/AudioPlayer/AudioPlayerViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "1DC00F62-DDA4-4C91-8050-02E18E21591D - a8aecc13c4f88aaf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of TymchEnglish.AudioPlayerViewModel.isPlaying : Swift.Bool"
+                  moduleName = "TymchEnglish"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/irenetymchenko/Documents/iOSDev_TymchEnglish%202/TymchEnglish/Utilities/AudioPlayer/AudioPlayerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "1DC00F62-DDA4-4C91-8050-02E18E21591D - e154a8fd9968d1fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TymchEnglish.AudioPlayerViewModel.isPlaying.getter : Swift.Bool"
+                  moduleName = "TymchEnglish"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/irenetymchenko/Documents/iOSDev_TymchEnglish%202/TymchEnglish/Utilities/AudioPlayer/AudioPlayerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "1DC00F62-DDA4-4C91-8050-02E18E21591D - d3c90d4650843a99"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TymchEnglish.AudioPlayerViewModel.isPlaying.setter : Swift.Bool"
+                  moduleName = "TymchEnglish"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/irenetymchenko/Documents/iOSDev_TymchEnglish%202/TymchEnglish/Utilities/AudioPlayer/AudioPlayerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "1DC00F62-DDA4-4C91-8050-02E18E21591D - 6c9582acf9c9396e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TymchEnglish.AudioPlayerViewModel.isPlaying.modify : Swift.Bool"
+                  moduleName = "TymchEnglish"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/irenetymchenko/Documents/iOSDev_TymchEnglish%202/TymchEnglish/Utilities/AudioPlayer/AudioPlayerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "1DC00F62-DDA4-4C91-8050-02E18E21591D - 3f1d504fdbe71304"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TymchEnglish.AudioPlayerViewModel.isPlaying.modify : Swift.Bool with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "TymchEnglish"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/irenetymchenko/Documents/iOSDev_TymchEnglish%202/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "1DC00F62-DDA4-4C91-8050-02E18E21591D - 4503743fad020eb0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TymchEnglish.AudioPlayerViewModel.$isPlaying.getter : Combine.Published&lt;Swift.Bool&gt;.Publisher"
+                  moduleName = "TymchEnglish"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/irenetymchenko/Documents/iOSDev_TymchEnglish%202/TymchEnglish/Utilities/AudioPlayer/AudioPlayerViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "1DC00F62-DDA4-4C91-8050-02E18E21591D - 8a4a70447d70d196"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TymchEnglish.AudioPlayerViewModel.$isPlaying.setter : Combine.Published&lt;Swift.Bool&gt;.Publisher"
+                  moduleName = "TymchEnglish"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/irenetymchenko/Documents/iOSDev_TymchEnglish%202/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "1DC00F62-DDA4-4C91-8050-02E18E21591D - e5efada789e60a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TymchEnglish.AudioPlayerViewModel.$isPlaying.modify : Combine.Published&lt;Swift.Bool&gt;.Publisher"
+                  moduleName = "TymchEnglish"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/irenetymchenko/Documents/iOSDev_TymchEnglish%202/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "1DC00F62-DDA4-4C91-8050-02E18E21591D - d8ea50325744e203"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TymchEnglish.AudioPlayerViewModel.$isPlaying.modify : Combine.Published&lt;Swift.Bool&gt;.Publisher with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "TymchEnglish"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/irenetymchenko/Documents/iOSDev_TymchEnglish%202/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
