@@ -11,7 +11,7 @@ struct PoemCellView: View {
     
     var title: String
     var imageName: String
-    @State var isPlaying: Bool
+    @Binding var isPlaying: Bool
     
     var body: some View {
         
@@ -37,7 +37,7 @@ struct PoemCellView: View {
 
 
 #Preview {
-    PoemCellView(title: MockData.samplePoem.title, imageName: MockData.samplePoem.imageName, isPlaying: true)
+    PoemCellView(title: MockData.samplePoem.title, imageName: MockData.samplePoem.imageName, isPlaying: .constant(true))
 }
 
 

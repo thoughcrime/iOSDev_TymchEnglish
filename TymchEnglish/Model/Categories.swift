@@ -10,12 +10,12 @@ import Foundation
 struct PoemCategory: Hashable, Identifiable, Codable {
     
     var id = UUID()
-    var category: categories
+    var category: Categories
     var title: String
     var categoryImage: String
     
     
-    enum categories: Codable {
+    enum Categories: Codable {
         case animals
         case dailyRoutines
         case actions

@@ -10,8 +10,8 @@ import SwiftUI
 struct PoemDetailedView: View {
     
     @EnvironmentObject var favourites: Favourites
-    
     var poem: Poem
+    @StateObject private var audioPlayerViewModel = AudioPlayerViewModel()  // Using a local state object to preserve the state.
     
     var body: some View {
         ScrollView {
@@ -19,7 +19,7 @@ struct PoemDetailedView: View {
                 HStack {
                     Spacer()
                     Button(action: {
-                            favourites.process(poem)
+                        favourites.process(poem)
                     }, label: {
                         if favourites.items.contains(poem) {
                             IconToFavourite(imageName: "heart.fill")
@@ -47,7 +47,7 @@ struct PoemDetailedView: View {
                     .multilineTextAlignment(.center)
                 
                 HStack {
-                    AudioPlayerView(audioFileName: poem.audioFileName)
+                    AudioPlayerView(audioPlayerViewModel: audioPlayerViewModel, audioFileName: poem.audioFileName)
                         .padding(.trailing, 40)
                     Link("Watch the video", destination: URL(string:poem.videoLink) ?? URL(fileURLWithPath: ""))
                 }

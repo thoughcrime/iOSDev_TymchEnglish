@@ -19,7 +19,7 @@ struct PoemsListVIew: View {
                     NavigationLink {
                         PoemDetailedView(poem: poem)
                     } label: {
-                        PoemCellView(title: poem.title, imageName: poem.imageName, isPlaying: false)
+                        PoemCellView(title: poem.title, imageName: poem.imageName, isPlaying: .constant(false))
                     }
                 }
                 //

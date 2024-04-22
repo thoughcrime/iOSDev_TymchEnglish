@@ -8,16 +8,13 @@
 import SwiftUI
 
 struct AudioPlayerView: View {
-    @StateObject var audioPlayerViewModel = AudioPlayerViewModel()
+    @ObservedObject var audioPlayerViewModel = AudioPlayerViewModel()
     var audioFileName: String
-    @State var isPlaying: Bool = false
-    
+
     var body: some View {
-        Button {
-            audioPlayerViewModel.playOrStop()
-            isPlaying = audioPlayerViewModel.isPlaying
-//            print("This is state of a view \(isPlaying)")
-        } label: {
+        Button(action: {
+            audioPlayerViewModel.playOrStop(audioFileName: audioFileName)
+        }) {
             if audioPlayerViewModel.audiofileInitialized ?? true {
                 VStack {
                     Image(systemName: audioPlayerViewModel.isPlaying ? "stop.circle" : "play.circle")
@@ -33,13 +30,13 @@ struct AudioPlayerView: View {
                 
             }
         }
-        
         .onAppear {
-            audioPlayerViewModel.initilizeAudioPlayer(audioFileName: audioFileName)
+            audioPlayerViewModel.initializeAudioPlayer(audioFileName: audioFileName)
         }
-        .onDisappear{
+        .onDisappear {
+            // Automatically stop the audio when the view disappears
             if audioPlayerViewModel.isPlaying {
-                audioPlayerViewModel.playOrStop()
+                audioPlayerViewModel.playOrStop(audioFileName: audioFileName)
             }
         }
     }

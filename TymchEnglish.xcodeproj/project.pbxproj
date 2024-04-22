@@ -11,6 +11,7 @@
 		74029B042B0A6C19007A6FBF /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74029B032B0A6C19007A6FBF /* InformationView.swift */; };
 		74029B062B0A6D4D007A6FBF /* LikedPoemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74029B052B0A6D4D007A6FBF /* LikedPoemListView.swift */; };
 		74145E542B26005D004EF9B2 /* ResourceNotFound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74145E532B26005D004EF9B2 /* ResourceNotFound.swift */; };
+		74149EE22BD32E0D00FA0227 /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74149EE12BD32E0D00FA0227 /* AudioPlayerManager.swift */; };
 		74432D9A2B084EC70003790E /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74432D992B084EC70003790E /* AppButton.swift */; };
 		7446BDBD2B2177E5009C6EEA /* soundPlaceholder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7446BDBC2B2177E5009C6EEA /* soundPlaceholder.mp3 */; };
 		744962022B268D02004B1F2D /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744962012B268D02004B1F2D /* Extentions.swift */; };
@@ -58,6 +59,7 @@
 		74029B032B0A6C19007A6FBF /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		74029B052B0A6D4D007A6FBF /* LikedPoemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPoemListView.swift; sourceTree = "<group>"; };
 		74145E532B26005D004EF9B2 /* ResourceNotFound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceNotFound.swift; sourceTree = "<group>"; };
+		74149EE12BD32E0D00FA0227 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
 		74432D992B084EC70003790E /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
 		7446BDBC2B2177E5009C6EEA /* soundPlaceholder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundPlaceholder.mp3; sourceTree = "<group>"; };
 		744962012B268D02004B1F2D /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				747FE7732B1F6249000C4D18 /* AudioPlayerViewModel.swift */,
+				74149EE12BD32E0D00FA0227 /* AudioPlayerManager.swift */,
 				747FE7762B1F62FB000C4D18 /* AudioPlayerView.swift */,
 			);
 			path = AudioPlayer;
@@ -438,6 +441,7 @@
 				74029B022B0A6A9C007A6FBF /* TymchEnglishTabView.swift in Sources */,
 				74C34D872B1AC9B900C46818 /* LikedPoemsViewModel.swift in Sources */,
 				74B8028E2B09A85700106B17 /* PoemsCategoriesListView.swift in Sources */,
+				74149EE22BD32E0D00FA0227 /* AudioPlayerManager.swift in Sources */,
 				74432D9A2B084EC70003790E /* AppButton.swift in Sources */,
 				747FE7742B1F6249000C4D18 /* AudioPlayerViewModel.swift in Sources */,
 				744962022B268D02004B1F2D /* Extentions.swift in Sources */,

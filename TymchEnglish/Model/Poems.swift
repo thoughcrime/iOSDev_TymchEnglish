@@ -14,7 +14,7 @@ struct Poem: Hashable, Identifiable, Codable {
 //      IDs are set manually, IDs from 0001 ... 0009 are reserved for test purposes, for real data IDs
     let id: Int
     let title: String
-    let category: PoemCategory.categories
+    let category: PoemCategory.Categories
     let imageName: String
     let audioFileName: String
     let videoLink: String
@@ -145,7 +145,7 @@ struct Poems: Hashable {
             title: "Pat-a-Cake",
             category: .actions,
             imageName: "imagePlaceholder",
-            audioFileName: "soundPlaceholder.mp3",
+            audioFileName: "soundPlaceholder2.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
             lyrics: "Pat-a-cake, pat-a-cake, baker’s man.\nBake me a cake as fast as you can.\nRoll it, and pat it, and mark it with a “B”.\nPut it in the oven for Baby and me!"),
         Poem (
