@@ -15,14 +15,21 @@ struct PoemsListVIew: View {
         
         NavigationStack {
             List (Poems.poems) {poem in
-                if poem.category == category.category {
+                if poem.themeCategory == category.themeCategory {
                     NavigationLink {
                         PoemDetailedView(poem: poem)
                     } label: {
                         PoemCellView(title: poem.title, imageName: poem.imageName, isPlaying: .constant(false))
                     }
                 }
-                //
+                else if poem.functionalCategory == category.functionalCategory {
+                    NavigationLink {
+                        PoemDetailedView(poem: poem)
+                    } label: {
+                        PoemCellView(title: poem.title, imageName: poem.imageName, isPlaying: .constant(false))
+                    }
+                }
+    
             }.listStyle(.automatic)
                 .navigationTitle(category.title)
                 .navigationBarTitleDisplayMode(.inline)

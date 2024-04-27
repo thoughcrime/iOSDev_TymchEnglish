@@ -14,7 +14,8 @@ struct Poem: Hashable, Identifiable, Codable {
 //      IDs are set manually, IDs from 0001 ... 0009 are reserved for test purposes, for real data IDs
     let id: Int
     let title: String
-    let category: PoemCategory.Categories
+    let themeCategory: PoemCategory.ThemeCategories
+    let functionalCategory: PoemCategory.FunctionalCategories
     let imageName: String
     let audioFileName: String
     let videoLink: String
@@ -28,8 +29,9 @@ struct MockData {
     static let samplePoem = Poem (
         id: 0001,
         title: "Baa baa black Sheep",
-        category: .animals,
-        imageName: "imagePlaceholder", 
+        themeCategory: .animals, 
+        functionalCategory: .counting,
+        imageName: "imagePlaceholder",
         audioFileName: "soundPlaceholder.mp3",
         videoLink: "https://youtu.be/dQw4w9WgXcQ",
         lyrics: "Baa, baa, black sheep, have you any wool? \nYes, sir, yes, sir, three bags full.\nOne for my master, one for my dame,\nAnd one for the little boy who lives down the lane. \nBaa, baa, black sheep have you any wool?\nYes, sir, yes, sir, three bags full.\n\n Thank you said the master,\nThank you said the dame\nAnd thank you said the little boy \nwho lived down the lane.")
@@ -38,7 +40,8 @@ struct MockData {
        Poem (
             id: 0002,
             title: "This is the first poem",
-            category: .animals,
+            themeCategory: .animals, 
+            functionalCategory: .counting,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -46,7 +49,8 @@ struct MockData {
        Poem (
         id: 0003,
         title: "This is the second poem",
-        category: .colors,
+        themeCategory: .colors,
+        functionalCategory: .learning,
         imageName: "imagePlaceholder",
         audioFileName: "soundPlaceholder2.mp3",
         videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -54,7 +58,8 @@ struct MockData {
        Poem (
         id: 0004,
         title: "This is the third poem",
-        category: .dailyRoutines,
+        themeCategory: .dailyRoutines,
+        functionalCategory: .storytime,
         imageName: "imagePlaceholder",
         audioFileName: "soundPlaceholder3.mp3",
         videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -71,7 +76,8 @@ struct Poems: Hashable {
         Poem (
             id: 0010,
             title: "Baa baa black Sheep",
-            category: .animals,
+            themeCategory: .animals,
+            functionalCategory: .counting,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -79,7 +85,8 @@ struct Poems: Hashable {
         Poem (
             id: 0011,
             title: "Beehive",
-            category: .animals,
+            themeCategory: .animals,
+            functionalCategory: .counting,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder3.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -87,7 +94,8 @@ struct Poems: Hashable {
         Poem (
             id: 0012,
             title: "Finger Family",
-            category: .bodyParts,
+            themeCategory: .bodyParts,
+            functionalCategory: .fingerplays,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -95,7 +103,8 @@ struct Poems: Hashable {
         Poem (
             id: 0013,
             title: "Five Little Speckled Frogs",
-            category: .animals,
+            themeCategory: .animals,
+            functionalCategory: .counting,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -103,7 +112,8 @@ struct Poems: Hashable {
         Poem (
             id: 0014,
             title: "Five Little Monkeys",
-            category: .animals,
+            themeCategory: .animals,
+            functionalCategory: .counting,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -111,7 +121,8 @@ struct Poems: Hashable {
         Poem (
             id: 0015,
             title: "Two Little Blackbirds",
-            category: .animals,
+            themeCategory: .animals,
+            functionalCategory: .oposits,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -119,7 +130,8 @@ struct Poems: Hashable {
         Poem (
             id: 0016,
             title: "Rain is Falling Down",
-            category: .seasons,
+            themeCategory: .seasons,
+            functionalCategory: .soundImitation,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -127,7 +139,8 @@ struct Poems: Hashable {
         Poem (
             id: 0017,
             title: "Three ducks",
-            category: .animals,
+            themeCategory: .animals,
+            functionalCategory: .counting,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -135,7 +148,8 @@ struct Poems: Hashable {
         Poem (
             id: 0018,
             title: "Slippery fish, slippery fish",
-            category: .animals,
+            themeCategory: .animals,
+            functionalCategory: .actions,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -143,7 +157,8 @@ struct Poems: Hashable {
         Poem (
             id: 0019,
             title: "Pat-a-Cake",
-            category: .actions,
+            themeCategory: .food,
+            functionalCategory: .actions,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder2.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -151,7 +166,8 @@ struct Poems: Hashable {
         Poem (
             id: 0020,
             title: "Clap, clap, clap your hands",
-            category: .actions,
+            themeCategory: .bodyParts,
+            functionalCategory: .actions,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -159,7 +175,8 @@ struct Poems: Hashable {
         Poem (
             id: 0021,
             title: "I’m a little teapot",
-            category: .actions,
+            themeCategory: .food,
+            functionalCategory: .actions,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -167,7 +184,8 @@ struct Poems: Hashable {
         Poem (
             id: 0022,
             title: "Bubble gum",
-            category: .bodyParts,
+            themeCategory: .bodyParts,
+            functionalCategory: .actions,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -175,7 +193,8 @@ struct Poems: Hashable {
         Poem (
             id: 0023,
             title: "Peek-A-Boo",
-            category: .actions,
+            themeCategory: .baby,
+            functionalCategory: .actions,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -183,7 +202,8 @@ struct Poems: Hashable {
         Poem (
             id: 0024,
             title: "Teddy bear, Teddy bear",
-            category: .actions,
+            themeCategory: .dailyRoutines,
+            functionalCategory: .actions,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -191,7 +211,8 @@ struct Poems: Hashable {
         Poem (
             id: 0025,
             title: "Open, Shut Them",
-            category: .actions,
+            themeCategory: .bodyParts,
+            functionalCategory: .actions,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -199,7 +220,8 @@ struct Poems: Hashable {
         Poem (
             id: 0026,
             title: "Hickory Dickory Dock",
-            category: .animals,
+            themeCategory: .animals,
+            functionalCategory: .counting,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -208,7 +230,8 @@ struct Poems: Hashable {
         Poem (
             id: 0027,
             title: "Hey Diddle Diddle",
-            category: .animals,
+            themeCategory: .animals,
+            functionalCategory: .actions,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -217,7 +240,8 @@ struct Poems: Hashable {
         Poem (
             id: 0028,
             title: "Hot Cross Buns",
-            category: .actions,
+            themeCategory: .food,
+            functionalCategory: .actions,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -225,17 +249,19 @@ struct Poems: Hashable {
         
         Poem (
             id: 0029,
-            title: "Jack & Jill",
-            category: .actions,
+            title: "I’m a Little Turkey",
+            themeCategory: .specialDays,
+            functionalCategory: .soundImitation,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
-            lyrics:"Jack and Jill went up the hill\nTo fetch a pail of water;\nJack fell down and broke his crown\nAnd Jill came tumbling after."),
+            lyrics:"I’m a little turkey,/n/My name is Ted./n/Here are my feathers,/n/Here is my head./n/Gobble, gobble, gobble,/n/Is what I say,/n/Quick! Quick! Run Ted! It’s Thanksgiving Day!"),
         
         Poem (
             id: 0030,
             title: "Muffin Man",
-            category: .actions,
+            themeCategory: .food,
+            functionalCategory: .singAlong,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -243,7 +269,8 @@ struct Poems: Hashable {
         
         Poem(id: 0031,
              title: "Rain",
-             category: .seasons,
+             themeCategory: .seasons,
+             functionalCategory: .actions,
              imageName: "imagePlaceholder",
              audioFileName: "soundPlaceholder.mp3",
              videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -252,7 +279,8 @@ struct Poems: Hashable {
         Poem (
             id: 0032,
             title: "Twinkle, Twinkle, Little Star",
-            category: .lullabye,
+            themeCategory: .lullabye,
+            functionalCategory: .soundImitation,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -261,7 +289,8 @@ struct Poems: Hashable {
         Poem (
             id: 0033,
             title: "Come, let's to Bed",
-            category: .lullabye,
+            themeCategory: .lullabye,
+            functionalCategory: .singAlong,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -270,7 +299,8 @@ struct Poems: Hashable {
         Poem (
             id: 0034,
             title: "Hush, Little Baby",
-            category: .lullabye,
+            themeCategory: .lullabye,
+            functionalCategory: .singAlong,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -279,7 +309,8 @@ struct Poems: Hashable {
         Poem (
             id: 0035,
             title: "Sleep, Baby, Sleep",
-            category: .lullabye,
+            themeCategory: .lullabye,
+            functionalCategory: .singAlong,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
