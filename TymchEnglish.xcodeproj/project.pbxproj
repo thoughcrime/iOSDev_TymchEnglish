@@ -16,6 +16,7 @@
 		7446BDBD2B2177E5009C6EEA /* soundPlaceholder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7446BDBC2B2177E5009C6EEA /* soundPlaceholder.mp3 */; };
 		744962022B268D02004B1F2D /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744962012B268D02004B1F2D /* Extentions.swift */; };
 		744962082B26BEC7004B1F2D /* WebLinkWithSystemImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744962072B26BEC7004B1F2D /* WebLinkWithSystemImage.swift */; };
+		745A412E2BDD337D00F50745 /* PoemsSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745A412D2BDD337D00F50745 /* PoemsSearchView.swift */; };
 		74600C2F2AD4A8D400AAB760 /* TymchEnglishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74600C2E2AD4A8D400AAB760 /* TymchEnglishApp.swift */; };
 		74600C362AD4A8D600AAB760 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74600C352AD4A8D600AAB760 /* Preview Assets.xcassets */; };
 		747FE7742B1F6249000C4D18 /* AudioPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747FE7732B1F6249000C4D18 /* AudioPlayerViewModel.swift */; };
@@ -64,6 +65,7 @@
 		7446BDBC2B2177E5009C6EEA /* soundPlaceholder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundPlaceholder.mp3; sourceTree = "<group>"; };
 		744962012B268D02004B1F2D /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		744962072B26BEC7004B1F2D /* WebLinkWithSystemImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebLinkWithSystemImage.swift; sourceTree = "<group>"; };
+		745A412D2BDD337D00F50745 /* PoemsSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemsSearchView.swift; sourceTree = "<group>"; };
 		74600C2B2AD4A8D400AAB760 /* TymchEnglish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TymchEnglish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74600C2E2AD4A8D400AAB760 /* TymchEnglishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TymchEnglishApp.swift; sourceTree = "<group>"; };
 		74600C352AD4A8D600AAB760 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 			children = (
 				74B8028B2B09986300106B17 /* PoemDetailedView.swift */,
 				74B802872B09952900106B17 /* PoemsListView.swift */,
+				745A412D2BDD337D00F50745 /* PoemsSearchView.swift */,
 			);
 			path = Poems;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 			files = (
 				74E351D62B0B06A3005E76F5 /* CategoryCellView.swift in Sources */,
 				74145E542B26005D004EF9B2 /* ResourceNotFound.swift in Sources */,
+				745A412E2BDD337D00F50745 /* PoemsSearchView.swift in Sources */,
 				74B8028C2B09986300106B17 /* PoemDetailedView.swift in Sources */,
 				74E351D22B0AF6F1005E76F5 /* Categories.swift in Sources */,
 				744962082B26BEC7004B1F2D /* WebLinkWithSystemImage.swift in Sources */,
