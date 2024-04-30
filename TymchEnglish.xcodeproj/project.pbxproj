@@ -84,10 +84,10 @@
 		7415ABE62B1446DF001B4BE4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				7415D9112B2405FC0085F300 /* SoundRecords */,
 				744962092B26C88E004B1F2D /* Links */,
 				744962002B268CD4004B1F2D /* Extensions */,
 				744961FF2B268CBC004B1F2D /* Buttons */,
-				747FE7752B1F62D9000C4D18 /* AudioPlayer */,
 				749DB0392B1D9D650050EFD9 /* Allert */,
 			);
 			path = Utilities;
@@ -99,6 +99,7 @@
 				749DB0372B1D80790050EFD9 /* EmptyState.swift */,
 				74E351CC2B0AF02F005E76F5 /* BackgroundView.swift */,
 				74145E532B26005D004EF9B2 /* ResourceNotFound.swift */,
+				746A76A52BE08E600098E8F6 /* Poems */,
 				7415ABED2B144A66001B4BE4 /* Cells */,
 			);
 			path = Views;
@@ -120,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				74B8028D2B09A85700106B17 /* PoemsCategoriesListView.swift */,
-				7415ABEF2B144DB7001B4BE4 /* Poems */,
 			);
 			path = PoemCategories;
 			sourceTree = "<group>";
@@ -153,21 +153,12 @@
 		7415ABEE2B144AC4001B4BE4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				747FE7752B1F62D9000C4D18 /* AudioPlayer */,
 				74E351C82B0ACBF5005E76F5 /* Poems.swift */,
 				74E351D12B0AF6F1005E76F5 /* Categories.swift */,
 				74C34D882B1ACB0A00C46818 /* Favourites.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		7415ABEF2B144DB7001B4BE4 /* Poems */ = {
-			isa = PBXGroup;
-			children = (
-				74B8028B2B09986300106B17 /* PoemDetailedView.swift */,
-				74B802872B09952900106B17 /* PoemsListView.swift */,
-				745A412D2BDD337D00F50745 /* PoemsSearchView.swift */,
-			);
-			path = Poems;
 			sourceTree = "<group>";
 		};
 		7415D9112B2405FC0085F300 /* SoundRecords */ = {
@@ -224,7 +215,6 @@
 			children = (
 				74600C2E2AD4A8D400AAB760 /* TymchEnglishApp.swift */,
 				7460AE982B16810C001BD387 /* Info.plist */,
-				7415D9112B2405FC0085F300 /* SoundRecords */,
 				7415ABE62B1446DF001B4BE4 /* Utilities */,
 				7415ABEE2B144AC4001B4BE4 /* Model */,
 				7415ABE82B1446F4001B4BE4 /* Screens */,
@@ -241,6 +231,16 @@
 				74600C352AD4A8D600AAB760 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		746A76A52BE08E600098E8F6 /* Poems */ = {
+			isa = PBXGroup;
+			children = (
+				74B8028B2B09986300106B17 /* PoemDetailedView.swift */,
+				74B802872B09952900106B17 /* PoemsListView.swift */,
+				745A412D2BDD337D00F50745 /* PoemsSearchView.swift */,
+			);
+			path = Poems;
 			sourceTree = "<group>";
 		};
 		747FE7752B1F62D9000C4D18 /* AudioPlayer */ = {
