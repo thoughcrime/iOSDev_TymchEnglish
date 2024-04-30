@@ -36,5 +36,5 @@ struct TymchEnglishTabView: View {
 }
 
 #Preview {
-    TymchEnglishTabView()
+    TymchEnglishTabView().environmentObject(Favourites())
 }

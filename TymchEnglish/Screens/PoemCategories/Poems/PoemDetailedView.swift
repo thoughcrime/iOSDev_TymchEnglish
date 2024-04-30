@@ -58,7 +58,7 @@ struct PoemDetailedView: View {
     }
 }
 #Preview {
-    PoemDetailedView(poem: MockData.samplePoem)
+    PoemDetailedView(poem: MockData.samplePoem).environmentObject(Favourites())
 }
 
 struct IconToFavourite: View {

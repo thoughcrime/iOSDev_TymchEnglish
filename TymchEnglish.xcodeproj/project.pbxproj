@@ -28,7 +28,6 @@
 		74B802882B09952900106B17 /* PoemsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B802872B09952900106B17 /* PoemsListView.swift */; };
 		74B8028C2B09986300106B17 /* PoemDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8028B2B09986300106B17 /* PoemDetailedView.swift */; };
 		74B8028E2B09A85700106B17 /* PoemsCategoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8028D2B09A85700106B17 /* PoemsCategoriesListView.swift */; };
-		74C34D872B1AC9B900C46818 /* LikedPoemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C34D862B1AC9B900C46818 /* LikedPoemsViewModel.swift */; };
 		74C34D892B1ACB0A00C46818 /* Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C34D882B1ACB0A00C46818 /* Favourites.swift */; };
 		74CEF4E92B215FF700E8483E /* soundPlaceholder2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 74CEF4E82B215FF700E8483E /* soundPlaceholder2.mp3 */; };
 		74E351C92B0ACBF5005E76F5 /* Poems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E351C82B0ACBF5005E76F5 /* Poems.swift */; };
@@ -62,7 +61,6 @@
 		74B802872B09952900106B17 /* PoemsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemsListView.swift; sourceTree = "<group>"; };
 		74B8028B2B09986300106B17 /* PoemDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemDetailedView.swift; sourceTree = "<group>"; };
 		74B8028D2B09A85700106B17 /* PoemsCategoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemsCategoriesListView.swift; sourceTree = "<group>"; };
-		74C34D862B1AC9B900C46818 /* LikedPoemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPoemsViewModel.swift; sourceTree = "<group>"; };
 		74C34D882B1ACB0A00C46818 /* Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourites.swift; sourceTree = "<group>"; };
 		74CEF4E82B215FF700E8483E /* soundPlaceholder2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundPlaceholder2.mp3; sourceTree = "<group>"; };
 		74E351C82B0ACBF5005E76F5 /* Poems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poems.swift; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 		7415ABEB2B14496D001B4BE4 /* Liked */ = {
 			isa = PBXGroup;
 			children = (
-				74C34D862B1AC9B900C46818 /* LikedPoemsViewModel.swift */,
 				74029B052B0A6D4D007A6FBF /* LikedPoemListView.swift */,
 			);
 			path = Liked;
@@ -348,7 +345,6 @@
 				74029B042B0A6C19007A6FBF /* InformationView.swift in Sources */,
 				74E351D02B0AF64A005E76F5 /* PoemCellView.swift in Sources */,
 				74029B022B0A6A9C007A6FBF /* TymchEnglishTabView.swift in Sources */,
-				74C34D872B1AC9B900C46818 /* LikedPoemsViewModel.swift in Sources */,
 				74B8028E2B09A85700106B17 /* PoemsCategoriesListView.swift in Sources */,
 				74149EE22BD32E0D00FA0227 /* AudioPlayerManager.swift in Sources */,
 				74432D9A2B084EC70003790E /* AppButton.swift in Sources */,

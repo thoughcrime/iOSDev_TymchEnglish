@@ -58,5 +58,5 @@ struct LikedPoemListView: View {
 }
 
 #Preview {
-    LikedPoemListView()
+    LikedPoemListView().environmentObject(Favourites())
 }
