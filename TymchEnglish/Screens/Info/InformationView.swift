@@ -23,7 +23,7 @@ struct InformationView: View {
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 10)
                 WebLinkWithSystemImage(systemImage: "globe", linkText: "Tymch English", urlString: "https://www.instagram.com/tymch_english/")
-                Text (try! AttributedString(markdown: "Or feel free to reach out with any suggestions you might have at:\n tymchenglish@gmail.com"))
+                Text (try! AttributedString(markdown: "Or feel free to reach out with any suggestions you might have at:\n tymch.english.for.kids@gmail.com"))
                     .font(.title2)
                     .multilineTextAlignment(.center)
                     .padding()

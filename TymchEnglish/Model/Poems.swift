@@ -31,10 +31,10 @@ struct MockData {
         title: "Baa baa black Sheep",
         themeCategory: .animals, 
         functionalCategory: .counting,
-        imageName: "imagePlaceholder",
+        imageName: "poemBaaBaaBlackSheep",
         audioFileName: "soundPlaceholder.mp3",
-        videoLink: "https://youtu.be/dQw4w9WgXcQ",
-        lyrics: "Baa, baa, black sheep, have you any wool? \nYes, sir, yes, sir, three bags full.\nOne for my master, one for my dame,\nAnd one for the little boy who lives down the lane. \nBaa, baa, black sheep have you any wool?\nYes, sir, yes, sir, three bags full.\n\n Thank you said the master,\nThank you said the dame\nAnd thank you said the little boy \nwho lived down the lane.")
+        videoLink: "none",
+        lyrics: "Baa, baa, black sheep, have you any wool? \nYes, sir, yes, sir, three bags full.\nOne for my master, one for my dame,\nAnd one for the little boy\n who lives down the lane. \nBaa, baa, black sheep have you any wool?\nYes, sir, yes, sir, three bags full.\n\n Thank you said the master,\nThank you said the dame\nAnd thank you said the little boy \nwho lived down the lane.")
     
     static let setOfSamplePoems: [Poem] = [
        Poem (
@@ -78,10 +78,10 @@ struct Poems: Hashable {
             title: "Baa baa black Sheep",
             themeCategory: .animals,
             functionalCategory: .counting,
-            imageName: "imagePlaceholder",
+            imageName: "poemBaaBaaBlackSheep",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
-            lyrics: "Baa, baa, black sheep, have you any wool? \nYes, sir, yes, sir, three bags full.\nOne for my master, one for my dame,\nAnd one for the little boy who lives down the lane. \nBaa, baa, black sheep have you any wool?\nYes, sir, yes, sir, three bags full.\n\n Thank you said the master,\nThank you said the dame\nAnd thank you said the little boy \nwho lived down the lane."),
+            lyrics: "Baa, baa, black sheep, have you any wool? \nYes, sir, yes, sir, three bags full.\nOne for my master, one for my dame,\nAnd one for the little boy\n who lives down the lane. \nBaa, baa, black sheep have you any wool?\nYes, sir, yes, sir, three bags full.\n\n Thank you said the master,\nThank you said the dame\nAnd thank you said the little boy \nwho lived down the lane."),
         Poem (
             id: 0011,
             title: "Beehive",
@@ -89,7 +89,7 @@ struct Poems: Hashable {
             functionalCategory: .counting,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder3.mp3",
-            videoLink: "https://youtu.be/dQw4w9WgXcQ",
+            videoLink: "none",
             lyrics: "Here is the beehive, where are all the bees?\nHidden away where nobody sees.\nOpen it up and out they fly.\nOne, two, three, four, five, buzzzz."),
         Poem (
             id: 0012,
@@ -147,13 +147,13 @@ struct Poems: Hashable {
             lyrics: "Watch the ducks and you'll see,\nthey are waddling one, two, three.\nFirst the smallest leads the line,\nMiddle sized duck thinks the second place is fine,\nBiggest duck is third you see,\nThey are waddling one, two, three."),
         Poem (
             id: 0018,
-            title: "Slippery fish, slippery fish",
+            title: "Slippery fish",
             themeCategory: .animals,
             functionalCategory: .actions,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
-            lyrics: "Swimming in the water\nSlippery fish, slippery fish\nGulp, gulp, gulp\nOh no!\nIt's been eaten by an...\n\nOctopus, octopus\nSquiggling in the water\nOctopus, octopus\nGulp, gulp, gulp\nOh no!\nIt's been eaten by a...\n\nTuna fish, tuna fish\nSplashing in the water\nTuna fish, tuna fish\nGulp, gulp, gulp\nOh no!\nIt's been eaten by a...\n\nGreat white shark, great white shark\nWorking in the water\nGreat white shark, great white shark\nGulp, gulp, gulp\nOh no!\nIt's been eaten by a...\n\nHumongus whale, humongus whale\nSpouting in the water\nHumongus whale, humongus whale\nGulp, gulp, gulp\nGulp, gulp\nBurp, excuse me!"),
+            lyrics: "Slippery fish, slippery fish\nSwimming in the water\nSlippery fish, slippery fish\nGulp, gulp, gulp\nOh no!\nIt's been eaten by an...\n\nOctopus, octopus\nSquiggling in the water\nOctopus, octopus\nGulp, gulp, gulp\nOh no!\nIt's been eaten by a...\n\nTuna fish, tuna fish\nSplashing in the water\nTuna fish, tuna fish\nGulp, gulp, gulp\nOh no!\nIt's been eaten by a...\n\nGreat white shark, great white shark\nWorking in the water\nGreat white shark, great white shark\nGulp, gulp, gulp\nOh no!\nIt's been eaten by a...\n\nHumongus whale, humongus whale\nSpouting in the water\nHumongus whale, humongus whale\nGulp, gulp, gulp\nGulp, gulp\nBurp, excuse me!"),
         Poem (
             id: 0019,
             title: "Pat-a-Cake",
@@ -255,7 +255,7 @@ struct Poems: Hashable {
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
-            lyrics:"I’m a little turkey,/n/My name is Ted./n/Here are my feathers,/n/Here is my head./n/Gobble, gobble, gobble,/n/Is what I say,/n/Quick! Quick! Run Ted! It’s Thanksgiving Day!"),
+            lyrics:"I’m a little turkey,\nMy name is Ted.\nHere are my feathers,\nHere is my head.\nGobble, gobble, gobble,\nIs what I say,\n\nQuick! Quick! Run Ted!\nIt’s Thanksgiving Day!"),
         
         Poem (
             id: 0030,

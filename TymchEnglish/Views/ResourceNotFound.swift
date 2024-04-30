@@ -20,7 +20,8 @@ struct ResourceNotFound: View {
                 .font(.caption)
                 .foregroundStyle(.secondary)
         }
-        .padding()
+        .presentationDetents([.medium, .large])
+        .presentationDragIndicator(.visible)
 
     }
 }

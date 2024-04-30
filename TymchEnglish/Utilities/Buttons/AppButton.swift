@@ -10,10 +10,11 @@ import SwiftUI
 struct AppButton: View {
     
     var text:String
+    var width:CGFloat? = 280
     
     var body: some View {
         Text(text)
-            .frame(width: 280, height: 50)
+            .frame(width: width, height: 50)
             .background(Color.white)
             .font(.system(size: 20, weight: .bold, design: .default))
             .foregroundColor(.lightRasbery)

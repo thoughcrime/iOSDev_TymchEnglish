@@ -22,6 +22,7 @@ struct AudioPlayerView: View {
                         .frame(width: 64, height: 64)
                     Text(audioPlayerViewModel.isPlaying ? "Stop" : "Play")
                 }
+                .shadow(radius: 2, x:1, y:1)
             } else {
                 Image(systemName: "x.circle")
                     .resizable()
@@ -44,8 +45,6 @@ struct AudioPlayerView: View {
 
 #Preview {
     VStack{
-        AudioPlayerView(audioFileName: MockData.samplePoem.audioFileName)
-        AudioPlayerView(audioFileName: MockData.samplePoem.audioFileName)
         AudioPlayerView(audioFileName: MockData.samplePoem.audioFileName)
     }
 }

@@ -19,6 +19,7 @@
 		745A412E2BDD337D00F50745 /* PoemsSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745A412D2BDD337D00F50745 /* PoemsSearchView.swift */; };
 		74600C2F2AD4A8D400AAB760 /* TymchEnglishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74600C2E2AD4A8D400AAB760 /* TymchEnglishApp.swift */; };
 		74600C362AD4A8D600AAB760 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74600C352AD4A8D600AAB760 /* Preview Assets.xcassets */; };
+		746CF1AD2BF2DEC500F828CF /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746CF1AC2BF2DEC500F828CF /* VideoPlayerView.swift */; };
 		747FE7742B1F6249000C4D18 /* AudioPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747FE7732B1F6249000C4D18 /* AudioPlayerViewModel.swift */; };
 		747FE7772B1F62FB000C4D18 /* AudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747FE7762B1F62FB000C4D18 /* AudioPlayerView.swift */; };
 		7496F40D2B201B8A00DCAA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7496F40C2B201B8A00DCAA49 /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		74600C2E2AD4A8D400AAB760 /* TymchEnglishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TymchEnglishApp.swift; sourceTree = "<group>"; };
 		74600C352AD4A8D600AAB760 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7460AE982B16810C001BD387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		746CF1AC2BF2DEC500F828CF /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		747FE7732B1F6249000C4D18 /* AudioPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewModel.swift; sourceTree = "<group>"; };
 		747FE7762B1F62FB000C4D18 /* AudioPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerView.swift; sourceTree = "<group>"; };
 		7496F40C2B201B8A00DCAA49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = TymchEnglish/Assets.xcassets; sourceTree = SOURCE_ROOT; };
@@ -99,6 +101,7 @@
 				749DB0372B1D80790050EFD9 /* EmptyState.swift */,
 				74E351CC2B0AF02F005E76F5 /* BackgroundView.swift */,
 				74145E532B26005D004EF9B2 /* ResourceNotFound.swift */,
+				746CF1AC2BF2DEC500F828CF /* VideoPlayerView.swift */,
 				746A76A52BE08E600098E8F6 /* Poems */,
 				7415ABED2B144A66001B4BE4 /* Cells */,
 			);
@@ -352,6 +355,7 @@
 				744962022B268D02004B1F2D /* Extentions.swift in Sources */,
 				74B802822B09575700106B17 /* StartScreenView.swift in Sources */,
 				747FE7772B1F62FB000C4D18 /* AudioPlayerView.swift in Sources */,
+				746CF1AD2BF2DEC500F828CF /* VideoPlayerView.swift in Sources */,
 				74E351CD2B0AF02F005E76F5 /* BackgroundView.swift in Sources */,
 				74E351C92B0ACBF5005E76F5 /* Poems.swift in Sources */,
 				74600C2F2AD4A8D400AAB760 /* TymchEnglishApp.swift in Sources */,
