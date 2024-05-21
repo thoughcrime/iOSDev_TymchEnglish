@@ -11,7 +11,7 @@ import SwiftUI
 struct Poem: Hashable, Identifiable, Codable {
     
 //    let id = UUID() // generates a unique id for each instance
-//      IDs are set manually, IDs from 0001 ... 0009 are reserved for test purposes, for real data IDs
+//      IDs are set manually, IDs from 0001 ... 0009 are reserved for test purposes, 10+ are reserved for real data IDs 
     let id: Int
     let title: String
     let themeCategory: PoemCategory.ThemeCategories
@@ -66,13 +66,14 @@ struct MockData {
         lyrics: "Baa, baa, black sheep, have you any wool? \nYes, sir, yes, sir, three bags full.\nOne for my master, one for my dame,\nAnd one for the little boy who lives down the lane. \nBaa, baa, black sheep have you any wool?\nYes, sir, yes, sir, three bags full.\n\n Thank you said the master,\nThank you said the dame\nAnd thank you said the little boy \nwho lived down the lane.")
        
     ]
-    
-    static let items = Set(setOfSamplePoems)
+
 }
 
 struct Poems: Hashable {
     
-    static let poems = [
+    static let shared = Poems()
+    
+    private var poems = [
         Poem (
             id: 0010,
             title: "Baa baa black Sheep",
@@ -317,6 +318,15 @@ struct Poems: Hashable {
             lyrics:"Sleep, baby, sleep,\nThy father guards the sheep;\nThy mother shakes the dreamland three\nAnd from it fall sweet dreams for thee,\nSleep,baby,sleep.\n\nSleep, baby, sleep,\nOur cottage vale is deep;\n"),
         
     ]
+    
+    func getPoem(by id: Int) -> Poem? {
+            return poems.first { $0.id == id }
+        }
+    
+    func loadAllPoems() -> [Poem] {
+        // Load poems data here
+        return poems
+    }
 }
 
 

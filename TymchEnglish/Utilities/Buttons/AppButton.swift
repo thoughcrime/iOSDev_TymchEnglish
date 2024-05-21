@@ -11,11 +11,12 @@ struct AppButton: View {
     
     var text:String
     var width:CGFloat? = 280
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         Text(text)
             .frame(width: width, height: 50)
-            .background(Color.white)
+            .background(colorScheme == .dark ? Color.black : Color.white)
             .font(.system(size: 20, weight: .bold, design: .default))
             .foregroundColor(.lightRasbery)
             .cornerRadius(10)

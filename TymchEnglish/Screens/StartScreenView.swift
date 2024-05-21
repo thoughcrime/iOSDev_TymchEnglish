@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct StartScreenVew: View {
-    
+struct StartScreenView: View {
     @Binding var showingPopover: Bool
+    @EnvironmentObject var profileViewModel: ProfileViewModel
+    @EnvironmentObject var favourites: Favourites
+    @State private var showProfileSelection = false
     
     var body: some View {
-        
-        ZStack{
-            
+        ZStack {
             BackgroundView()
             
             VStack {
@@ -25,11 +25,31 @@ struct StartScreenVew: View {
                     .foregroundColor(.lightRasbery)
                     .padding(.top, 20)
                 
-                Text ("English poems, rhymes and songs for kids")
+                Text("English poems, rhymes and songs for kids")
                     .padding(.top)
                     .font(.title)
                     .multilineTextAlignment(.center)
                     .foregroundStyle(.lightRasbery)
+                Spacer()
+                
+                Text("Profile: \(profileViewModel.selectedProfile?.name ?? "Guest")")
+                    .font(.headline)
+                    .foregroundStyle(.lightRasbery)
+                    .padding()
+                
+                Button(action: {
+                    showProfileSelection = true
+                }) {
+                    AppButton(text: "Select Profile")
+                }
+                .sheet(isPresented: $showProfileSelection) {
+                    ProfileSelectionView(viewModel: profileViewModel) { profile in
+                        profileViewModel.selectProfile(profile: profile)
+                        favourites.setCurrentProfile(profile)
+                    }
+                    .environmentObject(favourites)
+                }
+                
                 Spacer()
                 
                 Button {
@@ -38,17 +58,22 @@ struct StartScreenVew: View {
                     AppButton(text: "Start")
                 }
                 Spacer()
-                
+            }
+        }
+        .onAppear {
+            if profileViewModel.selectedProfile == nil {
+                profileViewModel.selectProfile(profile: profileViewModel.profiles.first(where: { $0.name == "Guest" })!)
+            }
+            if let selectedProfile = profileViewModel.selectedProfile {
+                favourites.setCurrentProfile(selectedProfile)
             }
         }
     }
 }
 
+#Preview {
+    StartScreenView(showingPopover: .constant(true)).environmentObject(ProfileViewModel()).environmentObject(Favourites())
 
-struct ContentView_Preview: PreviewProvider {
-    static var previews: some View{
-        StartScreenVew(showingPopover: .constant(true))
-    }
 }
 
 

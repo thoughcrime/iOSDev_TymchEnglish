@@ -11,6 +11,7 @@ struct TymchEnglishTabView: View {
     
     @State private var showingPopover = true
     @EnvironmentObject var favourites: Favourites
+    @EnvironmentObject var profileViewModel: ProfileViewModel
     
     var body: some View {
         TabView {
@@ -18,11 +19,11 @@ struct TymchEnglishTabView: View {
                 .tabItem {
                     Label("Poems", systemImage: "book.closed")
                 }
-                
+            
             LikedPoemListView()
                 .tabItem {
                     Label("Liked", systemImage: "heart")
-                }.badge(favourites.items.count)
+                }.badge(favourites.getPoemIDs(for: profileViewModel.selectedProfile ?? Profile(id: UUID(), name: "Guest")).count)
             
             InformationView()
                 .tabItem {
@@ -30,11 +31,11 @@ struct TymchEnglishTabView: View {
                 }
         }.tint(.lightRasbery)
             .popover(isPresented: $showingPopover) {
-                StartScreenVew(showingPopover: $showingPopover)
+                StartScreenView(showingPopover: $showingPopover)
             }
     }
 }
 
 #Preview {
-    TymchEnglishTabView().environmentObject(Favourites())
+    TymchEnglishTabView().environmentObject(Favourites()).environmentObject(ProfileViewModel())
 }

@@ -14,7 +14,7 @@ struct PoemsListVIew: View {
     var body: some View {
         
         NavigationStack {
-            List (Poems.poems) {poem in
+            List (Poems.shared.loadAllPoems()) {poem in
                 if poem.themeCategory == category.themeCategory {
                     NavigationLink {
                         PoemDetailedView(poem: poem)

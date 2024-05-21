@@ -9,7 +9,11 @@ import SwiftUI
 
 struct PoemsCategoriesListView: View {
     @State private var classificationType: ClassificationType = .thematic
+    @EnvironmentObject var profileViewModel: ProfileViewModel
+    @EnvironmentObject var favourites: Favourites
     @State private var showingSearchView = false
+    @State private var showProfileSelection = false
+    
     
     var body: some View {
         
@@ -38,16 +42,29 @@ struct PoemsCategoriesListView: View {
                 }
                     .navigationTitle("Categories:")
                     .toolbar{
-                        ToolbarItem(placement: .navigationBarTrailing) {
+                        ToolbarItem(placement: .topBarTrailing) {
                             Button(action: {
                                 showingSearchView.toggle()
                             }) {
                                 Image(systemName: "magnifyingglass")
                             }
                         }
+                        ToolbarItem(placement: .topBarLeading) {
+                            Button(action: {
+                                showProfileSelection.toggle()
+                            }) {
+                                Image(systemName: "person.crop.circle")
+                            }
+                        }
                     }
                     .sheet(isPresented: $showingSearchView) {
                         PoemsSearchView()
+                    }
+                    .sheet(isPresented: $showProfileSelection) {
+                        ProfileSelectionView(viewModel: profileViewModel) { profile in
+                                                profileViewModel.selectProfile(profile: profile)
+                                                favourites.setCurrentProfile(profile)
+                                            }
                     }
             }.scrollContentBackground(.hidden)
                 .navigationBarBackButtonHidden()
@@ -70,7 +87,7 @@ struct PoemsCategoriesListView: View {
 }
 
 #Preview {
-    PoemsCategoriesListView()
+    PoemsCategoriesListView().environmentObject(Favourites()).environmentObject(ProfileViewModel())
 }
 
 enum ClassificationType: String, CaseIterable {
