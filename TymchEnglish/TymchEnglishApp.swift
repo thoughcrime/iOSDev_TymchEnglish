@@ -10,11 +10,14 @@ import SwiftUI
 @main
 struct TymchEnglishApp: App {
     
-    var favourites = Favourites()
+    @StateObject private var profileViewModel = ProfileViewModel()
+    @StateObject private var favourites = Favourites()
     
     var body: some Scene {
         WindowGroup {
-            TymchEnglishTabView().environmentObject(favourites)
+            TymchEnglishTabView()
+                .environmentObject(favourites)
+                .environmentObject(profileViewModel)
         }
     }
 }

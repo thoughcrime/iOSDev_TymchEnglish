@@ -11,14 +11,14 @@ import SwiftUI
 struct Poem: Hashable, Identifiable, Codable {
     
 //    let id = UUID() // generates a unique id for each instance
-//      IDs are set manually, IDs from 0001 ... 0009 are reserved for test purposes, for real data IDs
+//      IDs are set manually, IDs from 0001 ... 0009 are reserved for test purposes, 10+ are reserved for real data IDs 
     let id: Int
     let title: String
     let themeCategory: PoemCategory.ThemeCategories
     let functionalCategory: PoemCategory.FunctionalCategories
     let imageName: String
     let audioFileName: String
-    let videoLink: String
+    let videoLink: String?
     let lyrics: String
     
 }
@@ -33,7 +33,7 @@ struct MockData {
         functionalCategory: .counting,
         imageName: "poemBaaBaaBlackSheep",
         audioFileName: "soundPlaceholder.mp3",
-        videoLink: "none",
+        videoLink: nil,
         lyrics: "Baa, baa, black sheep, have you any wool? \nYes, sir, yes, sir, three bags full.\nOne for my master, one for my dame,\nAnd one for the little boy\n who lives down the lane. \nBaa, baa, black sheep have you any wool?\nYes, sir, yes, sir, three bags full.\n\n Thank you said the master,\nThank you said the dame\nAnd thank you said the little boy \nwho lived down the lane.")
     
     static let setOfSamplePoems: [Poem] = [
@@ -66,13 +66,14 @@ struct MockData {
         lyrics: "Baa, baa, black sheep, have you any wool? \nYes, sir, yes, sir, three bags full.\nOne for my master, one for my dame,\nAnd one for the little boy who lives down the lane. \nBaa, baa, black sheep have you any wool?\nYes, sir, yes, sir, three bags full.\n\n Thank you said the master,\nThank you said the dame\nAnd thank you said the little boy \nwho lived down the lane.")
        
     ]
-    
-    static let items = Set(setOfSamplePoems)
+
 }
 
 struct Poems: Hashable {
     
-    static let poems = [
+    static let shared = Poems()
+    
+    private var poems = [
         Poem (
             id: 0010,
             title: "Baa baa black Sheep",
@@ -97,7 +98,7 @@ struct Poems: Hashable {
             themeCategory: .bodyParts,
             functionalCategory: .fingerplays,
             imageName: "imagePlaceholder",
-            audioFileName: "soundPlaceholder.mp3",
+            audioFileName: "soundPlaceholder2.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
             lyrics: "Daddy Finger, Daddy Finger, where are you?\nHere I am! Here I am! How do you do?\n\nMommy Finger, Mommy Finger, where are you?\nHere I am! Here I am! How do you do?\n\nBrother Finger, Brother Finger, where are you?\nHere I am! Here I am! How do you do?\n\nSister Finger, Sister Finger, where are you?\nHere I am! Here I am! How do you do?\n\nBaby Finger, Baby Finger, where are you?\nHere I am! Here I am! How do you do?\n"),
         Poem (
@@ -197,8 +198,8 @@ struct Poems: Hashable {
             functionalCategory: .actions,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
-            videoLink: "https://youtu.be/dQw4w9WgXcQ",
-            lyrics:"Who can play a peek a boo?\nI can play a peek a boo!\nCan you play a peek a boo?\nPeek A, Peek A, Peek A, Peek A Boo!"),
+            videoLink: "https://www.youtube.com/shorts/fCvBSOnyYmI?feature=share",
+            lyrics:"Who can play a peek-a-boo?\nPeek-a-boo, peek-a-boo?\nI can play a peek-a-boo! Peek-a-boo!\nCan you play a peek-a-boo?\nPeek-a-boo, peek-a-boo?\nI can play a peek-a-boo! Peek-a-boo!"),
         Poem (
             id: 0024,
             title: "Teddy bear, Teddy bear",
@@ -261,7 +262,7 @@ struct Poems: Hashable {
             id: 0030,
             title: "Muffin Man",
             themeCategory: .food,
-            functionalCategory: .singAlong,
+            functionalCategory: .warmUp,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -280,7 +281,7 @@ struct Poems: Hashable {
             id: 0032,
             title: "Twinkle, Twinkle, Little Star",
             themeCategory: .lullabye,
-            functionalCategory: .soundImitation,
+            functionalCategory: .calming,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -290,7 +291,7 @@ struct Poems: Hashable {
             id: 0033,
             title: "Come, let's to Bed",
             themeCategory: .lullabye,
-            functionalCategory: .singAlong,
+            functionalCategory: .calming,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -300,7 +301,7 @@ struct Poems: Hashable {
             id: 0034,
             title: "Hush, Little Baby",
             themeCategory: .lullabye,
-            functionalCategory: .singAlong,
+            functionalCategory: .calming,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
@@ -310,13 +311,82 @@ struct Poems: Hashable {
             id: 0035,
             title: "Sleep, Baby, Sleep",
             themeCategory: .lullabye,
-            functionalCategory: .singAlong,
+            functionalCategory: .calming,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
             lyrics:"Sleep, baby, sleep,\nThy father guards the sheep;\nThy mother shakes the dreamland three\nAnd from it fall sweet dreams for thee,\nSleep,baby,sleep.\n\nSleep, baby, sleep,\nOur cottage vale is deep;\n"),
+        Poem (
+            id: 0036,
+            title: "Up, down, turn around",
+            themeCategory: .bodyParts,
+            functionalCategory: .actions,
+            imageName: "imagePlaceholder",
+            audioFileName: "soundPlaceholder.mp3",
+            videoLink: "https://www.youtube.com/shorts/RJpSOOFjZcM?feature=share",
+            lyrics: "Up, down, turn around,\nTouch the sky and touch the ground,\nWiggle fingers, wiggle toes,\nWiggle shoulders,\nSay ‘Hello’!"
+        ),
+        Poem (
+            id: 0037,
+            title: "Here's a cup",
+            themeCategory: .food,
+            functionalCategory: .actions,
+            imageName: "imagePlaceholder",
+            audioFileName: "soundPlaceholder.mp3",
+            videoLink: "https://youtu.be/q97uBAaZvxc",
+            lyrics: "Here's a cup and here's a cup.\nAnd here's a pot of tea!\nPour in a cup, and pour in a cup,\nAnd now let's drink with me!"
+        ),
+        Poem (
+            id: 0038,
+            title: "Bread and butter",
+            themeCategory: .food,
+            functionalCategory: .warmUp,
+            imageName: "imagePlaceholder",
+            audioFileName: "soundPlaceholder.mp3",
+            videoLink: "https://youtu.be/dQw4w9WgXcQ",
+            lyrics: "Bread and butter,\nMarmalade and jam\nLet’s say “Hello” as happily as you can.\n\nBread and butter,\nMarmalade and jam\nLet’s say “Hello” as slowly, as you can.\n\nBread and butter,\nMarmalade and jam\nLet’s say “Hello” as loudly as you can."
+        ),
+        Poem (
+            id: 0039,
+            title: "Good morning to you!",
+            themeCategory: .dailyRoutines,
+            functionalCategory: .warmUp,
+            imageName: "imagePlaceholder",
+            audioFileName: "soundPlaceholder.mp3",
+            videoLink: "https://youtu.be/dQw4w9WgXcQ",
+            lyrics: "Good morning,\nGood morning,\nGood morning to you.\nGood morning,\nGood morning,\nI'm glad to see you."
+        ),
+        Poem (
+            id: 0040,
+            title: "Toast in a toster",
+            themeCategory: .food,
+            functionalCategory: .warmUp,
+            imageName: "imagePlaceholder",
+            audioFileName: "soundPlaceholder.mp3",
+            videoLink: "https://youtu.be/dQw4w9WgXcQ",
+            lyrics: "Toast in a toaster is getting very hot.\nTic-toc, tic-toc.\nNow I pop!"
+        ),
+        Poem (
+            id: 0041,
+            title: "Snowman",
+            themeCategory: .animals,
+            functionalCategory: .warmUp,
+            imageName: "imagePlaceholder",
+            audioFileName: "soundPlaceholder.mp3",
+            videoLink: "https://www.youtube.com/shorts/-rOTGQMjV3Y?feature=share",
+            lyrics: "I'm a little snowman. Look at me!\nThese are my buttons. 1,2,3.\nThese are my eyes and this is my nose.\nI'm wearing a hat and scarf.Brrr... it's cold."
+        ),
         
     ]
+    
+    func getPoem(by id: Int) -> Poem? {
+            return poems.first { $0.id == id }
+        }
+    
+    func loadAllPoems() -> [Poem] {
+        // Load poems data here
+        return poems
+    }
 }
 
 
