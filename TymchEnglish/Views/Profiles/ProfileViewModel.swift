@@ -9,7 +9,6 @@ import Foundation
 class ProfileViewModel: ObservableObject {
     @Published var profiles: [Profile] = []
     @Published var selectedProfile: Profile?
-    
 
     private let selectedProfileKey = "selectedProfileKey"
 

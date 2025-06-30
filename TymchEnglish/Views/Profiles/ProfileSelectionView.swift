@@ -24,13 +24,13 @@ struct ProfileSelectionView: View {
             List {
                 // Display the Guest profile first, it cannot be deleted
                 if let guestProfile = viewModel.profiles.first(where: { $0.name == "Guest" }) {
-                                    Button(action: {
-                                        viewModel.selectProfile(profile: guestProfile)
-                                        onProfileSelected(guestProfile)
-                                    }) {
-                                        ProfileCellView(viewModel: viewModel, profile: guestProfile)
-                                    }
-                                }
+                    Button(action: {
+                        viewModel.selectProfile(profile: guestProfile)
+                        onProfileSelected(guestProfile)
+                    }) {
+                        ProfileCellView(viewModel: viewModel, profile: guestProfile)
+                    }
+                }
                 
                 // Display other profiles, excluding the Guest profile
                 ForEach(viewModel.profiles.filter { $0.name != "Guest" }) { profile in
@@ -42,9 +42,12 @@ struct ProfileSelectionView: View {
                     }
                     .swipeActions {
                         Button(role: .destructive) {
-                            viewModel.deleteProfile(profile: profile)
                             // Makes sure that when chosen profile deleted, Guest profile will be selected respectevely
-                            guard let isProfileSelected = viewModel.selectedProfile else {viewModel.selectedProfile = viewModel.profiles.first; return}
+                            if viewModel.selectedProfile?.id == profile.id {
+                                viewModel.selectProfile(profile: viewModel.profiles.first(where: { $0.name == "Guest" })!)
+                                onProfileSelected(viewModel.selectedProfile!)
+                            }
+                            viewModel.deleteProfile(profile: profile)
                         } label: {
                             Label("Delete", systemImage: "trash")
                         }
@@ -70,19 +73,21 @@ struct ProfileSelectionView: View {
                     }
                 }
                 .disabled(newProfileName.isEmpty)
+                
+                .tint(.lightRasbery)
+                .padding()
+                .alert("Duplicated Profile", isPresented: $showDuplicateAlert) {
+                    Button("OK", role: .cancel) { }
+                } message: {
+                    Text("A profile with this name already exists.")
+                }
+                
             }
-            .padding()
-            .alert("Duplicated Profile", isPresented: $showDuplicateAlert) {
-                Button("OK", role: .cancel) { }
-            } message: {
-                Text("A profile with this name already exists.")
+            .background(BackgroundView())
+            .onAppear {
+                viewModel.loadProfiles()
+                audioPlayerManager.stopAudio()
             }
-            
-        }
-        .background(BackgroundView())
-        .onAppear {
-            viewModel.loadProfiles()
-            audioPlayerManager.stopAudio()
         }
     }
 }

@@ -10,7 +10,9 @@ import SwiftUI
 struct AppButton: View {
     
     var text:String
+    // allows to change widht of the button
     var width:CGFloat? = 280
+    // assigns a variable to track dark\light modes
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {

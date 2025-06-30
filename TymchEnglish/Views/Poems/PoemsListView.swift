@@ -36,10 +36,6 @@ struct PoemsListView: View {
                 .background(BackgroundView())
                 .scrollContentBackground(.hidden)
         }
-        //                Section {
-        //                }header: {
-        //                    Text ("Section 2").font(.headline).foregroundStyle(.lightRasbery)
-        //                }
     }
     
     

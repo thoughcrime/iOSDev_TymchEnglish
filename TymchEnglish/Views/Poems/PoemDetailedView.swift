@@ -44,8 +44,8 @@ struct PoemDetailedView: View {
                 HStack {
                     AudioPlayerView(audioPlayerViewModel: audioPlayerViewModel, audioFileName: poem.audioFileName)
                         .padding(.trailing, 40)
-                        .tint(.lightRasbery)
                     Button {
+
                         if poem.videoLink == "none" {
                             showAlert = true
                         } else {
@@ -62,7 +62,8 @@ struct PoemDetailedView: View {
                         Alert(title: Text("Resource Not Found"), message: Text("The video link is not available."), dismissButton: .default(Text("OK")))
                     }
                     .sheet(isPresented: $showVideoPlayer) {
-                        VideoPlayerView(videoID: poem.videoLink, isPresented: $showVideoPlayer)
+                        VideoPlayerView(videoID: poem.videoLink!, isPresented: $showVideoPlayer)
+
                     }
                 }
             }

@@ -7,20 +7,6 @@
 
 import SwiftUI
 
-//struct HelperFavourites {
-//    
-//    @State var items: Set<Int>
-//    
-//    func process (_ poem: Poem) {
-//        guard !items.contains(poem.id) else {
-//            items.remove(poem.id)
-//            return
-//        }
-//        items.insert(poem.id)
-//    }
-//}
-
-
 final class Favourites: ObservableObject {
     @AppStorage("favourites") private var storage: Data = Data()
     @Published private(set) var items: [UUID: [Int]] = [:]  // [ProfileID: [PoemID]]
