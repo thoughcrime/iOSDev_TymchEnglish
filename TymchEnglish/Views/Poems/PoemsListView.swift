@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PoemsListVIew: View {
+struct PoemsListView: View {
     
     var category: PoemCategory
     
@@ -47,7 +47,7 @@ struct PoemsListVIew: View {
             
 
 #Preview {
-    PoemsListVIew(category: PoemCategories.categories.first!)
+    PoemsListView(category: PoemCategories.categories.first!)
 }
 
 

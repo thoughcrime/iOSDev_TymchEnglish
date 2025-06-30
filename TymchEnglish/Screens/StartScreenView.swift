@@ -73,9 +73,7 @@ struct StartScreenView: View {
 
 #Preview {
     StartScreenView(showingPopover: .constant(true)).environmentObject(ProfileViewModel()).environmentObject(Favourites())
-
 }
-
 
 struct LogoView: View {
     

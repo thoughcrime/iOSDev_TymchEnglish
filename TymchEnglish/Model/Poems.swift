@@ -61,7 +61,7 @@ struct MockData {
         themeCategory: .dailyRoutines,
         functionalCategory: .storytime,
         imageName: "imagePlaceholder",
-        audioFileName: "soundPlaceholder3.mp3",
+        audioFileName: "soundPlaceholder.mp3",
         videoLink: "https://youtu.be/dQw4w9WgXcQ",
         lyrics: "Baa, baa, black sheep, have you any wool? \nYes, sir, yes, sir, three bags full.\nOne for my master, one for my dame,\nAnd one for the little boy who lives down the lane. \nBaa, baa, black sheep have you any wool?\nYes, sir, yes, sir, three bags full.\n\n Thank you said the master,\nThank you said the dame\nAnd thank you said the little boy \nwho lived down the lane.")
        
@@ -89,7 +89,7 @@ struct Poems: Hashable {
             themeCategory: .animals,
             functionalCategory: .counting,
             imageName: "imagePlaceholder",
-            audioFileName: "soundPlaceholder3.mp3",
+            audioFileName: "soundPlaceholder.mp3",
             videoLink: "none",
             lyrics: "Here is the beehive, where are all the bees?\nHidden away where nobody sees.\nOpen it up and out they fly.\nOne, two, three, four, five, buzzzz."),
         Poem (
@@ -163,7 +163,7 @@ struct Poems: Hashable {
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder2.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
-            lyrics: "Pat-a-cake, pat-a-cake, baker’s man.\nBake me a cake as fast as you can.\nRoll it, and pat it, and mark it with a “B”.\nPut it in the oven for Baby and me!"),
+            lyrics: "Pat-a-cake, pat-a-cake, baker's man.\nBake me a cake as fast as you can.\nRoll it, and pat it, and mark it with a "B".\nPut it in the oven for Baby and me!"),
         Poem (
             id: 0020,
             title: "Clap, clap, clap your hands",
@@ -175,13 +175,13 @@ struct Poems: Hashable {
             lyrics: "Clap, clap, clap your hands,\nClap your hands together.\nClap, clap, clap your hands,\nClap your hands together.\n\nStamp, stamp stamp your feet,\nStamp your feet together.\nStamp, stamp stamp your feet,\nStamp your feet together.\n\nTap, tap tap your toes,\nTap your toes together.\nTap, tap tap your toes,\nTap your toes together.\n\nBlink, blink, blink your eyes,\nBlink your eyes together.\nBlink, blink, blink your eyes,\nBlink your eyes together.\n\nBeep, beep, beep your nose,\nBeep your nose together.\nBeep, beep, beep your nose,\nBeep your nose together."),
         Poem (
             id: 0021,
-            title: "I’m a little teapot",
+            title: "I'm a little teapot",
             themeCategory: .food,
             functionalCategory: .actions,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
-            lyrics: "I’m a little teapot,\nShort and stout.\nHere is my handle,\nHere is my spout!\n\nWhen I get all steamed up,\nHear me shout:\n“Tip me over\nand pour me out!”\n\nI’m a clever teapot,\nYes, it’s true!\nHere let me show you\nWhat I can do!\n\nI can change my handle,\nAnd my spout.\nJust tip me over \nand pour me out!"),
+            lyrics: "I'm a little teapot,\nShort and stout.\nHere is my handle,\nHere is my spout!\n\nWhen I get all steamed up,\nHear me shout:\n"Tip me over\nand pour me out!"\n\nI'm a clever teapot,\nYes, it's true!\nHere let me show you\nWhat I can do!\n\nI can change my handle,\nAnd my spout.\nJust tip me over \nand pour me out!"),
         Poem (
             id: 0022,
             title: "Bubble gum",
@@ -250,13 +250,13 @@ struct Poems: Hashable {
         
         Poem (
             id: 0029,
-            title: "I’m a Little Turkey",
+            title: "I'm a Little Turkey",
             themeCategory: .specialDays,
             functionalCategory: .soundImitation,
             imageName: "imagePlaceholder",
             audioFileName: "soundPlaceholder.mp3",
             videoLink: "https://youtu.be/dQw4w9WgXcQ",
-            lyrics:"I’m a little turkey,\nMy name is Ted.\nHere are my feathers,\nHere is my head.\nGobble, gobble, gobble,\nIs what I say,\n\nQuick! Quick! Run Ted!\nIt’s Thanksgiving Day!"),
+            lyrics:"I'm a little turkey,\nMy name is Ted.\nHere are my feathers,\nHere is my head.\nGobble, gobble, gobble,\nIs what I say,\n\nQuick! Quick! Run Ted!\nIt's Thanksgiving Day!"),
         
         Poem (
             id: 0030,

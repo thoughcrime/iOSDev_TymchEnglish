@@ -14,9 +14,7 @@ struct PoemsCategoriesListView: View {
     @State private var showingSearchView = false
     @State private var showProfileSelection = false
     
-    
     var body: some View {
-        
         NavigationStack {
                 ZStack{
                     BackgroundView()
@@ -32,7 +30,7 @@ struct PoemsCategoriesListView: View {
                         LazyVGrid (columns: [GridItem(.flexible())]) {
                             ForEach (filteredCategories, id: \.id) {category in
                                 NavigationLink {
-                                    PoemsListVIew(category: category)
+                                    PoemsListView(category: category)
                                 } label: {
                                     CategoryCellView(category: category)
                                 }
