@@ -15,6 +15,7 @@ struct PoemCategory: Hashable, Identifiable, Codable {
     var title: String
     var categoryImage: String
     
+    // Having two categories allowes us to filter the poems on two different classifications
     
     enum ThemeCategories: Codable {
         case none
@@ -29,6 +30,7 @@ struct PoemCategory: Hashable, Identifiable, Codable {
         case seasons
         case food
         case baby
+        case clothes
     }
     
     enum FunctionalCategories: Codable {
@@ -41,7 +43,8 @@ struct PoemCategory: Hashable, Identifiable, Codable {
         case oposits
         case fingerplays
         case soundImitation
-        case singAlong
+        case warmUp
+        case calming
     }
     
 }
@@ -60,16 +63,18 @@ struct PoemCategories: Hashable {
         PoemCategory(themeCategory: .lullabye, functionalCategory: .none, title: "Lullabyes", categoryImage: "lulliby"),
         PoemCategory(themeCategory: .transportation, functionalCategory: .none, title: "Transportation", categoryImage: "transport"),
         PoemCategory(themeCategory: .seasons, functionalCategory: .none, title: "Seasongs and weather", categoryImage: "seasons"),
-        PoemCategory(themeCategory: .food, functionalCategory: .none, title: "Food and Kitchen", categoryImage: "imagePlaceholder"),
-        PoemCategory(themeCategory: .baby, functionalCategory: .none, title: "Baby Time", categoryImage: "imagePlaceholder"),
+        PoemCategory(themeCategory: .clothes, functionalCategory: .none, title: "Clothing", categoryImage: "clothing"),
+        PoemCategory(themeCategory: .food, functionalCategory: .none, title: "Food and Kitchen", categoryImage: "food"),
+        PoemCategory(themeCategory: .baby, functionalCategory: .none, title: "Baby Time", categoryImage: "babytime"),
         PoemCategory(themeCategory: .none, functionalCategory: .parachute, title: "Parachute and scarf songs and rhymes", categoryImage: "scarf"),
         PoemCategory(themeCategory: .none, functionalCategory: .actions, title: "Action songs and rhymes", categoryImage: "action"),
-        PoemCategory(themeCategory: .none, functionalCategory: .counting, title: "Counting songs and rhymes", categoryImage: "imagePlaceholder"),
-        PoemCategory(themeCategory: .none, functionalCategory: .oposits, title: "Songs and rhymes about oposits", categoryImage: "imagePlaceholder"),
-        PoemCategory(themeCategory: .none, functionalCategory: .storytime, title: "Storytime songs and rhymes", categoryImage: "imagePlaceholder"),
-        PoemCategory(themeCategory: .none, functionalCategory: .fingerplays, title: "Fingerplays", categoryImage: "imagePlaceholder"),
-        PoemCategory(themeCategory: .none, functionalCategory: .soundImitation, title: "Songs and rhymes imitating sounds", categoryImage: "imagePlaceholder"),
-        PoemCategory(themeCategory: .none, functionalCategory: .singAlong, title: "Sing-Along songs and rhymes", categoryImage: "imagePlaceholder"),
+        PoemCategory(themeCategory: .none, functionalCategory: .counting, title: "Counting songs and rhymes", categoryImage: "counting"),
+        PoemCategory(themeCategory: .none, functionalCategory: .oposits, title: "Songs and rhymes about oposits", categoryImage: "opposits"),
+        PoemCategory(themeCategory: .none, functionalCategory: .storytime, title: "Storytime songs and rhymes", categoryImage: "storytime"),
+        PoemCategory(themeCategory: .none, functionalCategory: .fingerplays, title: "Fingerplays", categoryImage: "fingerplays"),
+        PoemCategory(themeCategory: .none, functionalCategory: .soundImitation, title: "Songs and rhymes imitating sounds", categoryImage: "soundimitation"),
+        PoemCategory(themeCategory: .none, functionalCategory: .warmUp, title: "Warming-up chants and rhymes", categoryImage: "warmup"),
+        PoemCategory(themeCategory: .none, functionalCategory: .calming, title: "Calming chants and rhymes", categoryImage: "calming"),
     ]
 }
 

@@ -22,6 +22,7 @@ struct AudioPlayerView: View {
                         .frame(width: 64, height: 64)
                     Text(audioPlayerViewModel.isPlaying ? "Stop" : "Play")
                 }
+                .tint(.lightRasbery)
                 .shadow(radius: 2, x:1, y:1)
             } else {
                 Image(systemName: "x.circle")
@@ -31,9 +32,9 @@ struct AudioPlayerView: View {
                 
             }
         }
-        .onAppear {
-            audioPlayerViewModel.initializeAudioPlayer(audioFileName: audioFileName)
-        }
+//        .onAppear {
+//            audioPlayerViewModel.initializeAudioPlayer(audioFileName: audioFileName)
+//        }
         .onDisappear {
             // Automatically stop the audio when the view disappears
             if audioPlayerViewModel.isPlaying {

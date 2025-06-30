@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct PoemsListVIew: View {
+struct PoemsListView: View {
     
     var category: PoemCategory
     
     var body: some View {
         
         NavigationStack {
-            List (Poems.poems) {poem in
+            List (Poems.shared.loadAllPoems()) {poem in
                 if poem.themeCategory == category.themeCategory {
                     NavigationLink {
                         PoemDetailedView(poem: poem)
@@ -36,10 +36,6 @@ struct PoemsListVIew: View {
                 .background(BackgroundView())
                 .scrollContentBackground(.hidden)
         }
-        //                Section {
-        //                }header: {
-        //                    Text ("Section 2").font(.headline).foregroundStyle(.lightRasbery)
-        //                }
     }
     
     
@@ -47,7 +43,7 @@ struct PoemsListVIew: View {
             
 
 #Preview {
-    PoemsListVIew(category: PoemCategories.categories.first!)
+    PoemsListView(category: PoemCategories.categories.first!)
 }
 
 

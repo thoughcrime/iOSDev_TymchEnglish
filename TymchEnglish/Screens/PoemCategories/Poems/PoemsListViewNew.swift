@@ -1,10 +1,3 @@
-//
-//  PoemsListViewNew.swift
-//  TymchEnglish
-//
-//  Created by Irene Tymchenko on 27.11.2023.
-//
-
 import SwiftUI
 
 struct PoemsListViewNew: View {
