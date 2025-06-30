@@ -16,7 +16,7 @@ TymchEnglish is a comprehensive educational iOS application that provides a cura
 - Guest profile for quick access
 
 ### 📚 **Comprehensive Content Library**
-- **35+ English poems and nursery rhymes**
+- **Many English poems and nursery rhymes**
 - **Dual categorization system**:
   - **Thematic categories**: Animals, Colors, Body Parts, Seasons, Food, etc.
   - **Functional categories**: Counting, Actions, Fingerplays, Sound Imitation, etc.
@@ -90,34 +90,8 @@ TymchEnglish/
 
 ### Prerequisites
 - **Xcode 15.0+**
-- **iOS 17.0+**
+- **iOS 15.0+**
 - **macOS** (for development)
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/TymchEnglish.git
-   cd TymchEnglish
-   ```
-
-2. **Open in Xcode**
-   ```bash
-   open TymchEnglish.xcodeproj
-   ```
-
-3. **Build and Run**
-   - Select your target device or simulator
-   - Press `Cmd + R` to build and run
-
-### Configuration
-
-The app is ready to run out of the box with sample data. To customize:
-
-1. **Add Custom Poems**: Edit `TymchEnglish/Model/Poems.swift`
-2. **Modify Categories**: Update `TymchEnglish/Model/Categories.swift`
-3. **Add Audio Files**: Place audio files in `TymchEnglish/Utilities/SoundRecords/`
-4. **Update Images**: Add images to `TymchEnglish/Assets.xcassets/`
 
 ## 📸 Screenshots
 
@@ -203,7 +177,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Irene Tymchenko**
+**Oleh Tymchenko**
 - Created: October 9, 2023
 - Last Updated: December 2024
 
@@ -217,9 +191,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or need support:
 
-- 📧 **Email**: [your-email@example.com]
-- 🐛 **Issues**: [GitHub Issues](https://github.com/yourusername/TymchEnglish/issues)
-- 📖 **Documentation**: Check the inline code comments for detailed explanations
+- 📧 **Email**: [olehtymchenko.dev@gmail.com]
+- 🐛 **Issues**: [GitHub Issues](https://github.com/thoughcrime/TymchEnglish/issues)
 
 ---
 
