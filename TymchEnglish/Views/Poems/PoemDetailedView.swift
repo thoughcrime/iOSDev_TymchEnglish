@@ -45,10 +45,11 @@ struct PoemDetailedView: View {
                     AudioPlayerView(audioPlayerViewModel: audioPlayerViewModel, audioFileName: poem.audioFileName)
                         .padding(.trailing, 40)
                     Button {
-                        if poem.videoLink != nil {
-                            showVideoPlayer = true
-                        } else {
+
+                        if poem.videoLink == "none" {
                             showAlert = true
+                        } else {
+                            showVideoPlayer = true
                         }
                     } label: {
                         if poem.videoLink == "none" {
@@ -62,6 +63,7 @@ struct PoemDetailedView: View {
                     }
                     .sheet(isPresented: $showVideoPlayer) {
                         VideoPlayerView(videoID: poem.videoLink!, isPresented: $showVideoPlayer)
+
                     }
                 }
             }
