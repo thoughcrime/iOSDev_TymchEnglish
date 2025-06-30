@@ -35,7 +35,7 @@ class AudioPlayerManager: NSObject, ObservableObject, AVAudioPlayerDelegate {
                     try initializeAndPlay(url: url)
                 }
             } catch {
-                self.reportError(error)
+                self.reportInitilizingError(error)
             }
         } else {
             self.reportError("File not found: \(fileName)")
@@ -58,7 +58,7 @@ class AudioPlayerManager: NSObject, ObservableObject, AVAudioPlayerDelegate {
         currentlyPlaying = nil
     }
 
-    private func reportError(_ error: Error) {
+    private func reportInitilizingError(_ error: Error) {
         print("Audio Player Error: \(error.localizedDescription)")
         // Implement further error handling logic here. Could be logging or user notification.
     }

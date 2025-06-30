@@ -10,18 +10,8 @@ import SwiftUI
 
 class AudioPlayerViewModel: ObservableObject {
     @Published var isPlaying = false
-    @Published var alertItem: AlertItem?
     @Published var audiofileInitialized: Bool?
 
-    func initializeAudioPlayer(audioFileName: String) {
-        guard audiofileInitialized == nil else { return }
-        if Bundle.main.url(forResource: audioFileName, withExtension: nil) != nil {
-            audiofileInitialized = true
-        } else {
-            audiofileInitialized = false
-            alertItem = AlertContext.audioNotAvailable
-        }
-    }
     
     func playOrStop(audioFileName: String) {
         if AudioPlayerManager.shared.currentlyPlaying == audioFileName {

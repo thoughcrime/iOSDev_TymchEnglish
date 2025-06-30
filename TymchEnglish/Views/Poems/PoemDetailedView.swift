@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct PoemDetailedView: View {
-    
     @EnvironmentObject var favourites: Favourites
+    @EnvironmentObject var profileViewModel: ProfileViewModel
     var poem: Poem
-    @StateObject private var audioPlayerViewModel = AudioPlayerViewModel()  // Using a local state object to preserve the state.
+    @StateObject private var audioPlayerViewModel = AudioPlayerViewModel()
     @State private var showVideoPlayer = false
     @State private var showAlert = false
-    
+
     var body: some View {
         ScrollView {
             VStack {
@@ -24,8 +24,8 @@ struct PoemDetailedView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 200, height: 200)
                         .mask(
-                            RadialGradient(gradient: Gradient(colors: [.black, .clear]), center: .center, startRadius:90, endRadius: 100)
-                                    )
+                            RadialGradient(gradient: Gradient(colors: [.black, .clear]), center: .center, startRadius: 90, endRadius: 100)
+                        )
                         .padding(.leading, 5)
                     Spacer()
                     Text(poem.title)
@@ -34,24 +34,24 @@ struct PoemDetailedView: View {
                         .multilineTextAlignment(.center)
                         .padding(.trailing, 5)
                 }.padding()
-                
+
                 Text(poem.lyrics)
                     .font(.body)
                     .fontWeight(.medium)
                     .padding(10)
                     .multilineTextAlignment(.center)
-                
+
                 HStack {
                     AudioPlayerView(audioPlayerViewModel: audioPlayerViewModel, audioFileName: poem.audioFileName)
                         .padding(.trailing, 40)
-                        .tint(.lightRasbery)
                     Button {
+
                         if poem.videoLink == "none" {
-                         showAlert = true
+                            showAlert = true
                         } else {
                             showVideoPlayer = true
                         }
-                    } label: { 
+                    } label: {
                         if poem.videoLink == "none" {
                             AppButton(text: "Video Unavailable", width: 200)
                         } else {
@@ -62,7 +62,8 @@ struct PoemDetailedView: View {
                         Alert(title: Text("Resource Not Found"), message: Text("The video link is not available."), dismissButton: .default(Text("OK")))
                     }
                     .sheet(isPresented: $showVideoPlayer) {
-                        VideoPlayerView(videoID:poem.videoLink, isPresented: $showVideoPlayer)
+                        VideoPlayerView(videoID: poem.videoLink!, isPresented: $showVideoPlayer)
+
                     }
                 }
             }
@@ -71,9 +72,10 @@ struct PoemDetailedView: View {
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button(action: {
-                    favourites.process(poem)
+                    favourites.process(poem.id)
                 }, label: {
-                    if favourites.items.contains(poem) {
+                    if let selectedProfile = profileViewModel.selectedProfile,
+                       favourites.getPoemIDs(for: selectedProfile).contains(poem.id) {
                         IconToFavourite(imageName: "heart.fill")
                             .foregroundStyle(.lightRasbery)
                     } else {
@@ -87,7 +89,7 @@ struct PoemDetailedView: View {
     }
 }
 #Preview {
-    PoemDetailedView(poem: MockData.samplePoem).environmentObject(Favourites())
+    PoemDetailedView(poem: MockData.samplePoem).environmentObject(Favourites()).environmentObject(ProfileViewModel())
 }
 
 struct IconToFavourite: View {

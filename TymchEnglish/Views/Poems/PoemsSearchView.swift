@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PoemsSearchView: View {
     @State private var searchText = ""
-    @State private var allPoems: [Poem] = loadAllPoems() // This function should load all poems, not too relevant when local
+    @State private var allPoems: [Poem] = Poems.shared.loadAllPoems() // This function should load all poems, not too relevant when local
 
     var body: some View {
         NavigationStack {
@@ -47,11 +47,6 @@ struct PoemsSearchView: View {
             }
         }
     }
-}
-
-func loadAllPoems() -> [Poem] {
-    // Load poems data here
-    return Poems.poems
 }
 
 #Preview {
